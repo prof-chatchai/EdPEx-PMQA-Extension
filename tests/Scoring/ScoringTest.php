@@ -72,14 +72,14 @@ final class ScoringTest extends TestCase
         $errors = scoringValidate($assessId, $itemCode, 1, [
             'band' => '10-25%',
             'percent' => 10,
-            'strengths' => 'มีแนวทางเริ่มต้นที่เป็นระบบ',
+            'strengths' => 'A systematic initial approach',
             'dims' => [1, 1, 1, 1],
         ]);
 
         self::assertNotEmpty($errors, 'A non-zero score with no linked evidence must be rejected.');
         $hasEvidenceGateError = false;
         foreach ($errors as $error) {
-            if (str_contains($error, 'หลักฐาน')) {
+            if (str_contains($error, 'evidence')) {
                 $hasEvidenceGateError = true;
                 break;
             }

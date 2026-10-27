@@ -2,8 +2,8 @@
     "_meta": {
         "framework": "PMQA",
         "edition": "2562",
-        "source": "เกณฑ์คุณภาพการบริหารจัดการภาครัฐ พ.ศ. 2562 (ADLI/LeTCI, 7 หมวด, 1000 คะแนน)",
-        "source_points_table": "คู่มือการรับสมัครและพิจารณารางวัลฯ — ตารางที่ 1 (per pmqa_analysis/01_pmqa_criteria_summary.md + 06_pmqa_extension_ooad_design.md)",
+        "source": "Public Sector Management Quality Award (PMQA) criteria, B.E. 2562 / 2019 (ADLI/LeTCI, 7 categories, 1000 points)",
+        "source_points_table": "Award application and assessment manual, Table 1 (per pmqa_analysis/01_pmqa_criteria_summary.md + 06_pmqa_extension_ooad_design.md)",
         "max_points": 1000,
         "note": "GOVERNING FILE for the PMQA-2562 rubric, mirrors config/edpex.json's shape exactly (categories[].n/key/title/points/scoring/type/items[].code/title/points). PMQA-2562 uses the SAME ADLI (cat 1-6) / LeTCI (cat 7) scoring paradigm as EdPEx, so app/scoring.php's scoringScheme()/scoringBands()/scoringChoices()/scoringDimCapOk()/scoringValidate() run against PMQA items UNMODIFIED — scoringScheme() keys off categoryN (7=LeTCI else ADLI), not a framework flag, and scoringBands()/scoringChoices() key off the scheme code ('ADLI'/'LeTCI'), which is itself framework-agnostic (same band/percent choice tables). This file supplies category/item/points structure for rendering + rollup only; it is NOT read by scoringValidate()/scoringDimCapOk() at all — those functions needed zero code change to accept a PMQA item. Item-level 'areas' (sub-question guides) are deliberately NOT fully transcribed here (would require translating the full 146-page PMQA-2562 source PDF per item) — this is a structural/points-accurate skeleton sufficient to drive scoring, not a content-complete rubric; flagged honestly rather than forced.",
         "point_reconciliation": "cat1=120 + cat2=80 + cat3=110 + cat4=100 + cat5=90 + cat6=100 + cat7=400 = 1000 (cat7 sub-items 60+70+70+70+60+70=400; an early design note in 06_pmqa_extension_ooad_design.md loosely labelled cat7 '450' but the correct sum per the award-manual point table, doc 01/04, is 400)."
@@ -12,15 +12,15 @@
         {
             "n": 1,
             "key": "leadership",
-            "title": "การนำองค์การ",
+            "title": "Organizational Leadership",
             "points": 120,
             "scoring": "ADLI",
             "type": "process",
             "items": [
                 {
                     "code": "PMQA-1.1",
-                    "title": "การนำองค์การโดยผู้บริหารระดับสูง",
-                    "overall_q": "ผู้บริหารระดับสูงนำองค์การอย่างไร",
+                    "title": "Leadership by senior executives",
+                    "overall_q": "How do senior executives lead the organization?",
                     "points": 120
                 }
             ]
@@ -28,15 +28,15 @@
         {
             "n": 2,
             "key": "strategy",
-            "title": "การวางแผนเชิงยุทธศาสตร์",
+            "title": "Strategic Planning",
             "points": 80,
             "scoring": "ADLI",
             "type": "process",
             "items": [
                 {
                     "code": "PMQA-2.1",
-                    "title": "การจัดทำและถ่ายทอดยุทธศาสตร์",
-                    "overall_q": "ส่วนราชการมีวิธีการอย่างไรในการจัดทำและนำยุทธศาสตร์ไปปฏิบัติ",
+                    "title": "Strategy development and deployment",
+                    "overall_q": "How does the agency develop and implement its strategy?",
                     "points": 80
                 }
             ]
@@ -44,15 +44,15 @@
         {
             "n": 3,
             "key": "customers",
-            "title": "การให้ความสำคัญกับผู้รับบริการและผู้มีส่วนได้ส่วนเสีย",
+            "title": "Customer and Stakeholder Focus",
             "points": 110,
             "scoring": "ADLI",
             "type": "process",
             "items": [
                 {
                     "code": "PMQA-3.1",
-                    "title": "เสียงของผู้รับบริการและผู้มีส่วนได้ส่วนเสีย",
-                    "overall_q": "ส่วนราชการมีวิธีการอย่างไรในการรับฟังและตอบสนองผู้รับบริการและผู้มีส่วนได้ส่วนเสีย",
+                    "title": "Voice of customers and stakeholders",
+                    "overall_q": "How does the agency listen and respond to customers and stakeholders?",
                     "points": 110
                 }
             ]
@@ -60,15 +60,15 @@
         {
             "n": 4,
             "key": "measurement",
-            "title": "การวัด การวิเคราะห์ และการจัดการความรู้",
+            "title": "Measurement, Analysis and Knowledge Management",
             "points": 100,
             "scoring": "ADLI",
             "type": "process",
             "items": [
                 {
                     "code": "PMQA-4.1",
-                    "title": "การวัด วิเคราะห์ และปรับปรุงผลการดำเนินการ และการจัดการความรู้",
-                    "overall_q": "ส่วนราชการมีวิธีการอย่างไรในการวัด วิเคราะห์ และจัดการความรู้ขององค์การ",
+                    "title": "Measurement, analysis and improvement of performance, and knowledge management",
+                    "overall_q": "How does the agency measure, analyze and manage organizational knowledge?",
                     "points": 100
                 }
             ]
@@ -76,15 +76,15 @@
         {
             "n": 5,
             "key": "workforce",
-            "title": "บุคลากร",
+            "title": "Workforce Focus",
             "points": 90,
             "scoring": "ADLI",
             "type": "process",
             "items": [
                 {
                     "code": "PMQA-5.1",
-                    "title": "สภาพแวดล้อมและความผูกพันของบุคลากร",
-                    "overall_q": "ส่วนราชการมีวิธีการอย่างไรในการสร้างสภาพแวดล้อมและความผูกพันของบุคลากร",
+                    "title": "Workforce environment and engagement",
+                    "overall_q": "How does the agency build a workforce environment and engagement?",
                     "points": 90
                 }
             ]
@@ -92,15 +92,15 @@
         {
             "n": 6,
             "key": "operations",
-            "title": "การปฏิบัติการ",
+            "title": "Operations Focus",
             "points": 100,
             "scoring": "ADLI",
             "type": "process",
             "items": [
                 {
                     "code": "PMQA-6.1",
-                    "title": "กระบวนการทำงานและประสิทธิผลของการปฏิบัติการ",
-                    "overall_q": "ส่วนราชการมีวิธีการอย่างไรในการออกแบบ จัดการ และปรับปรุงกระบวนการทำงาน",
+                    "title": "Work processes and operational effectiveness",
+                    "overall_q": "How does the agency design, manage and improve its work processes?",
                     "points": 100
                 }
             ]
@@ -108,17 +108,17 @@
         {
             "n": 7,
             "key": "results",
-            "title": "ผลลัพธ์การดำเนินการ",
+            "title": "Results",
             "points": 400,
             "scoring": "LeTCI",
             "type": "results",
             "items": [
-                { "code": "PMQA-7.1", "title": "ผลลัพธ์ด้านประสิทธิผลและการบรรลุพันธกิจ", "points": 60 },
-                { "code": "PMQA-7.2", "title": "ผลลัพธ์ด้านผู้รับบริการและผู้มีส่วนได้ส่วนเสีย", "points": 70 },
-                { "code": "PMQA-7.3", "title": "ผลลัพธ์ด้านบุคลากร", "points": 70 },
-                { "code": "PMQA-7.4", "title": "ผลลัพธ์ด้านการนำองค์การและการกำกับดูแล", "points": 70 },
-                { "code": "PMQA-7.5", "title": "ผลลัพธ์ด้านงบประมาณ การเงิน และการเติบโต", "points": 60 },
-                { "code": "PMQA-7.6", "title": "ผลลัพธ์ด้านประสิทธิผลของกระบวนการและการจัดการเครือข่ายอุปทาน", "points": 70 }
+                { "code": "PMQA-7.1", "title": "Effectiveness and mission-achievement results", "points": 60 },
+                { "code": "PMQA-7.2", "title": "Customer and stakeholder results", "points": 70 },
+                { "code": "PMQA-7.3", "title": "Workforce results", "points": 70 },
+                { "code": "PMQA-7.4", "title": "Leadership and governance results", "points": 70 },
+                { "code": "PMQA-7.5", "title": "Budget, financial and growth results", "points": 60 },
+                { "code": "PMQA-7.6", "title": "Process effectiveness and supply-network management results", "points": 70 }
             ]
         }
     ]

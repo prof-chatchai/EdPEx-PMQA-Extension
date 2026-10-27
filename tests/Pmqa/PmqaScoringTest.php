@@ -83,7 +83,7 @@ final class PmqaScoringTest extends TestCase
      */
     public function testRealScoringDimCapOkAppliesUnmodifiedToPmqaItem(): void
     {
-        // PMQA-1.1 (การนำองค์การ) — 4 ADLI dims, weakest = 2.
+        // PMQA-1.1 (Organizational Leadership) — 4 ADLI dims, weakest = 2.
         $dims = [5, 4, 2, 5];
 
         self::assertTrue(
@@ -113,14 +113,14 @@ final class PmqaScoringTest extends TestCase
         $errors = scoringValidate($assessId, $item['code'], 1, [
             'band' => '10-25%',
             'percent' => 10,
-            'strengths' => 'มีแนวทางเริ่มต้นที่เป็นระบบตามเกณฑ์ PMQA-2562',
+            'strengths' => 'A systematic initial approach aligned with the PMQA-2562 criteria',
             'dims' => [2, 3, 2, 3],
         ]);
 
         self::assertNotEmpty($errors, 'A non-zero PMQA score with no linked evidence must be rejected.');
         $hasEvidenceGateError = false;
         foreach ($errors as $error) {
-            if (str_contains($error, 'หลักฐาน')) {
+            if (str_contains($error, 'evidence')) {
                 $hasEvidenceGateError = true;
                 break;
             }

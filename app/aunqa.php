@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 /**
  * AUN-QA helpers — program assessments + the zero-token bridge to KPI 7-4-074
- * ("ร้อยละของหลักสูตรที่ผ่านการประเมินตามเกณฑ์ AUN-QA ได้คะแนน 3 ขึ้นไป").
+ * ("Percentage of programmes assessed against the AUN-QA criteria with a score of 3 or higher").
  * Pure SQL aggregation; no LLM. Loaded on demand by views/aunqa.php.
  */
 
@@ -38,12 +38,12 @@ function aunqaPushKpi(): string
 {
     $sum = aunqaYearSummary();
     if ($sum === []) {
-        return 'ยังไม่มีข้อมูลประเมิน AUN-QA';
+        return 'No AUN-QA assessment data yet';
     }
     $latest = end($sum);
     $defId = sv(AppDB::scalar("SELECT id FROM kpi_definitions WHERE code = ?", [AUNQA_KPI_CODE]));
     if ($defId === '') {
-        return 'ไม่พบตัวชี้วัด ' . AUNQA_KPI_CODE . ' ใน kpi_definitions';
+        return 'KPI not found: ' . AUNQA_KPI_CODE . ' in kpi_definitions';
     }
     $vid = sv(AppDB::scalar("SELECT id FROM kpi_values WHERE kpi_definition_id = ? AND academic_year = ?", [$defId, $latest['year']]));
     if ($vid !== '') {
@@ -56,6 +56,6 @@ function aunqaPushKpi(): string
         );
     }
     appAudit('aunqa_push_kpi', 'kpi_definition', $defId, ['year' => $latest['year'], 'pct' => $latest['pct']]);
-    return sprintf('อัปเดต %s ปี %d = %s%% (%d/%d หลักสูตรผ่าน ≥%.0f)',
+    return sprintf('Updated %s year %d = %s%% (%d/%d programmes passed >=%.0f)',
         AUNQA_KPI_CODE, $latest['year'], (string) $latest['pct'], $latest['passed'], $latest['assessed'], AUNQA_PASS_SCORE);
 }

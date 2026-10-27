@@ -2,31 +2,31 @@
     "_meta": {
         "framework": "EdPEx",
         "edition": "2567-2570",
-        "source": "เกณฑ์คุณภาพการศึกษาเพื่อการดำเนินการที่เป็นเลิศ ฉบับปี 2567-2570 (ʻ.อว.) — เรียบเรียงจาก 2023-2024 Baldrige Excellence Framework (Education)",
-        "source_points_table": "หัวข้อและคะแนน หน้า 21",
+        "source": "Education Criteria for Performance Excellence, 2024-2027 edition (Office of the Permanent Secretary, MHESI) — adapted from the 2023-2024 Baldrige Excellence Framework (Education)",
+        "source_points_table": "Items and point values, p. 21",
         "max_points": 1000,
         "note": "GOVERNING FILE — single source of truth for the EdPEx rubric. The app renders categories/items/scores from this; do not hard-code criteria elsewhere. Points are the OFFICIAL 2567-2570 allocations (cat1=115, cat2=90 — NOT the older 120/85).",
-        "scope_note": "ขอบเขต \"EdPEx 100%\" = ความครบถ้วนตาม 'เกณฑ์' (หมวด/หัวข้อ/คะแนน/OP/core values/ADLI/LeTCI) ที่ระบบ render จากไฟล์นี้และตรวจอัตโนมัติด้วย gates G-01…G-10 — มิได้หมายความว่าทุกฟีเจอร์เชิงระบบจะมาครบใน MVP. MVP = read-only shell ที่ criteria ครบ 100%; การกรอกคะแนน ADLI/LeTCI = Phase B; dashboard ติดตาม roadmap 2567-2570 / maturity / RACI / HITL = Phase D. อ้างอิง docs/DESIGN-edpex-mvp.md §8 และ .docs/EdPEx/_governance/GOVERNANCE-TO-GATES.md."
+        "scope_note": "Scope of \"EdPEx 100%\" = completeness against the 'criteria' (Categories/Items/points/OP/core values/ADLI/LeTCI) that the system renders from this file and checks automatically with gates G-01…G-10 — it does not mean that every system-level feature will be delivered in the MVP. MVP = a read-only shell with 100% criteria completeness; entering ADLI/LeTCI scores = Phase B; dashboards tracking the 2024-2027 roadmap / maturity / RACI / HITL = Phase D. See docs/DESIGN-edpex-mvp.md §8 and .docs/EdPEx/_governance/GOVERNANCE-TO-GATES.md."
     },
     "core_values": [
-        "มุมมองเชิงระบบ",
-        "การนำองค์กรอย่างมีวิสัยทัศน์",
-        "ความเป็นเลิศที่มุ่งเน้นผู้เรียน",
-        "การให้ความสำคัญกับคน",
-        "ความคล่องตัวและความสามารถในการฟื้นตัวอย่างรวดเร็ว",
-        "การเรียนรู้ระดับองค์กร",
-        "การมุ่งเน้นความสำเร็จและนวัตกรรม",
-        "การจัดการโดยใช้ข้อมูลจริง",
-        "การสร้างประโยชน์ให้สังคม",
-        "จริยธรรมและความโปร่งใส",
-        "การส่งมอบคุณค่าและผลลัพธ์"
+        "Systems Perspective",
+        "Visionary Leadership",
+        "Student-Focused Excellence",
+        "Valuing People",
+        "Organizational Agility and Resilience",
+        "Organizational Learning",
+        "Focus on Success and Innovation",
+        "Management by Fact",
+        "Societal Contribution",
+        "Ethics and Transparency",
+        "Delivering Value and Results"
     ],
     "core_values_detail": [
         {
-            "name": "มุมมองเชิงระบบ",
+            "name": "Systems Perspective",
             "en": "Systems perspective",
-            "definition": "บริหารทุกส่วนขององค์กรเป็นหนึ่งเดียวเพื่อบรรลุพันธกิจและมุ่งสู่วิสัยทัศน์ — แผน กระบวนการ ตัววัด การกระทำ สอดคล้องและทำงานร่วมกัน",
-            "design": "โยงความสัมพันธ์ระหว่างหัวข้อ/หมวดอย่างชัดเจน ไม่เก็บหัวข้อเป็นเกาะ",
+            "definition": "Manage all parts of the organization as a unified whole to achieve the mission and move toward the vision — plans, processes, measures, and actions are aligned and work together.",
+            "design": "Link Items and Categories explicitly; do not store Items as isolated islands.",
             "links": [
                 1,
                 2,
@@ -38,180 +38,180 @@
             ]
         },
         {
-            "name": "การนำองค์กรอย่างมีวิสัยทัศน์",
+            "name": "Visionary Leadership",
             "en": "Visionary leadership",
-            "definition": "ผู้นำระดับสูงกำหนดวิสัยทัศน์ สร้างการมุ่งเน้นลูกค้า แสดงค่านิยม/จริยธรรม และตั้งความคาดหวังที่สูง",
-            "design": "หมวด 1 เก็บการถ่ายทอดพันธกิจ/วิสัยทัศน์/ค่านิยมเป็นหลักฐาน โยงสู่วัตถุประสงค์กลยุทธ์ (หมวด 2)",
+            "definition": "Senior leaders set the vision, create a customer focus, demonstrate values and ethics, and set high expectations.",
+            "design": "Category 1 stores the deployment of mission/vision/values as evidence, linked to strategic objectives (Category 2).",
             "links": [
                 1,
                 2
             ]
         },
         {
-            "name": "ความเป็นเลิศที่มุ่งเน้นผู้เรียน",
+            "name": "Student-Focused Excellence",
             "en": "Customer-focused excellence",
-            "definition": "คำนึงถึงคุณลักษณะของผลิตภัณฑ์/บริการ ช่องทางเข้าถึง/สนับสนุน และค่านิยม/พฤติกรรมทั้งหมดที่สร้างคุณค่าแก่ลูกค้า/ผู้เรียน",
-            "design": "ผู้เรียน/ผู้มีส่วนได้ส่วนเสียเป็นเอนทิตีหลัก หมวด 3 + 7.2 ครบวงจร ฟัง→ความต้องการ→ผลลัพธ์",
+            "definition": "Considers the features of programs/services, access and support channels, and all values/behaviors that create value for customers/students.",
+            "design": "Students/stakeholders are the core entities; Category 3 + 7.2 form a complete loop: listen → needs → results.",
             "links": [
                 3,
                 7
             ]
         },
         {
-            "name": "การให้ความสำคัญกับคน",
+            "name": "Valuing People",
             "en": "Valuing people",
-            "definition": "ความสำเร็จขึ้นกับบุคลากรที่ผูกพัน มีงานที่มีความหมาย การเรียนรู้ และภาระรับผิดชอบ รวมถึงคู่ความร่วมมือ",
-            "design": "หมวด 5 โยงปัจจัยขับเคลื่อนความผูกพัน → ผลลัพธ์ (7.3) ข้อมูลคนแบ่งกลุ่มได้",
+            "definition": "Success depends on an engaged workforce with meaningful work, learning, and accountability, including partners.",
+            "design": "Category 5 links engagement drivers → results (7.3); workforce data can be segmented.",
             "links": [
                 5,
                 7
             ]
         },
         {
-            "name": "ความคล่องตัวและความสามารถในการฟื้นตัวอย่างรวดเร็ว",
+            "name": "Organizational Agility and Resilience",
             "en": "Agility and resilience",
-            "definition": "ความสามารถในการเปลี่ยนแปลง/ยืดหยุ่นอย่างรวดเร็ว + คาดการณ์/เตรียม/ฟื้นตัวจากภาวะหยุดชะงัก",
-            "design": "รองรับการประเมินซ้ำแบบมีเวอร์ชัน ติดตามการปรับแผน และฟิลด์ความเสี่ยง/ความต่อเนื่องในหมวด 6",
+            "definition": "The ability to change/adapt rapidly + to anticipate, prepare for, and recover from disruptions.",
+            "design": "Supports versioned reassessment, tracking of plan adjustments, and risk/continuity fields in Category 6.",
             "links": [
                 6
             ]
         },
         {
-            "name": "การเรียนรู้ระดับองค์กร",
+            "name": "Organizational Learning",
             "en": "Organizational learning",
-            "definition": "ปรับปรุงแนวทางที่มีอยู่อย่างต่อเนื่อง + นวัตกรรมก้าวกระโดด นำสู่เป้าหมาย/แนวทาง/บริการใหม่",
-            "design": "มิติ L ใน ADLI ต้องเป็นฟิลด์ที่เก็บจริง (วงจรประเมิน/ปรับปรุง/แบ่งปัน) ไม่ใช่โดยนัย",
+            "definition": "Continuously improve existing approaches + breakthrough innovation, leading to new goals/approaches/services.",
+            "design": "The L dimension of ADLI must be an actually stored field (evaluation/improvement/sharing cycle), not implicit.",
             "links": [
                 4,
                 6
             ]
         },
         {
-            "name": "การมุ่งเน้นความสำเร็จและนวัตกรรม",
+            "name": "Focus on Success and Innovation",
             "en": "Focus on success and innovation",
-            "definition": "เข้าใจปัจจัยระยะสั้นและระยะยาวที่มีผลต่อองค์กร และขับเคลื่อนนวัตกรรม",
-            "design": "หมวด 2 มีขอบเขตวางแผนสองช่วงเวลา (สั้น/ยาว) นวัตกรรมเป็นชนิดของการปรับปรุงที่ติดป้ายได้",
+            "definition": "Understand the short- and long-term factors affecting the organization, and drive innovation.",
+            "design": "Category 2 has two planning time horizons (short/long); innovation is a taggable type of improvement.",
             "links": [
                 2
             ]
         },
         {
-            "name": "การจัดการโดยใช้ข้อมูลจริง",
+            "name": "Management by Fact",
             "en": "Management by fact",
-            "definition": "วัดและวิเคราะห์ผลการดำเนินการทั้งภายในและเทียบกับสภาพแวดล้อมการแข่งขัน",
-            "design": "ทุกคำตอบ/ข้อกล่าวอ้างต้องผูกหลักฐานและวัดได้ — แนบหลักฐาน + ตัววัดบังคับ (prime directive)",
+            "definition": "Measure and analyze performance both internally and against the competitive environment.",
+            "design": "Every answer/claim must be tied to evidence and be measurable — evidence attachment + mandatory measures (prime directive).",
             "links": [
                 4
             ]
         },
         {
-            "name": "การสร้างประโยชน์ให้สังคม",
+            "name": "Societal Contribution",
             "en": "Societal contributions",
-            "definition": "ผู้นำให้ความสำคัญกับประโยชน์สาธารณะ ความผาสุกของสังคม และเป็นแบบอย่างด้านสุขภาพ ความปลอดภัย สิ่งแวดล้อม",
-            "design": "หัวข้อความรับผิดชอบต่อสังคมในหมวด 1.2 + ผลลัพธ์ 7.4 ฟิลด์ชุมชน/กฎหมาย/จริยธรรม",
+            "definition": "Leaders prioritize the public good and societal well-being, and serve as role models in health, safety, and the environment.",
+            "design": "Societal responsibility Items in Category 1.2 + results 7.4; community/legal/ethics fields.",
             "links": [
                 1,
                 7
             ]
         },
         {
-            "name": "จริยธรรมและความโปร่งใส",
+            "name": "Ethics and Transparency",
             "en": "Ethics and transparency",
-            "definition": "ประพฤติอย่างมีจริยธรรมในทุกปฏิสัมพันธ์กับผู้มีส่วนได้ส่วนเสีย ผู้นำเป็นแบบอย่างพร้อมความคาดหวังที่ชัดเจน",
-            "design": "ร่องรอยการตรวจสอบ + หัวข้อจริยธรรม/ธรรมาภิบาล (1.2) พร้อมผลลัพธ์ (7.4) ความโปร่งใส = ประวัติการเปลี่ยนแปลงมองเห็นได้",
+            "definition": "Behave ethically in all interactions with stakeholders; leaders serve as role models with clear expectations.",
+            "design": "Audit trail + ethics/governance Items (1.2) with results (7.4); transparency = visible change history.",
             "links": [
                 1,
                 7
             ]
         },
         {
-            "name": "การส่งมอบคุณค่าและผลลัพธ์",
+            "name": "Delivering Value and Results",
             "en": "Delivering value and results",
-            "definition": "เลือก/วิเคราะห์ผลลัพธ์ที่ส่งมอบและสร้างสมดุลคุณค่าแก่ผู้มีส่วนได้ส่วนเสีย — ไม่ใช่แค่การเงิน",
-            "design": "อนุกรมผลลัพธ์หมวด 7 ครอบคลุม 7.1–7.5 (balanced scorecard ไม่ใช่ตัววัดเดียว)",
+            "definition": "Select/analyze the results delivered and balance value for stakeholders — not just financial.",
+            "design": "Category 7 results series cover 7.1–7.5 (balanced scorecard, not a single measure).",
             "links": [
                 7
             ]
         }
     ],
     "method": {
-        "systems_perspective": "บริหารทุกองค์ประกอบเป็นหนึ่งเดียว — OP เป็นบริบทคลุมด้านบน · หมวด 4 (การวัด/วิเคราะห์/ความรู้) เป็นฐาน(สมอง) · triad ผู้นำ (1→2,3) ป้อน triad ผลลัพธ์ (5,6→7) ผ่านแกนบูรณาการ (Integration)",
+        "systems_perspective": "Manage all components as a unified whole — the OP is the overarching context at the top · Category 4 (Measurement/Analysis/Knowledge) is the foundation (the brain) · the leadership triad (1→2,3) feeds the results triad (5,6→7) through the Integration core",
         "characteristics": [
-            "ไม่กำหนดวิธีตายตัว (non-prescriptive) — ถามว่า 'อย่างไร/อะไร' ปรับใช้ได้ทุกองค์กร",
-            "มุมมองเชิงระบบ — มองเป็นเครื่องจักรเดียวที่เชื่อมโยงกัน ไม่ใช่ 7 ไซโล",
-            "ปรับใช้ได้ทุกระดับความสุกงอม (any point on its journey)",
-            "มุ่งผลลัพธ์ — กระบวนการขับเคลื่อนผลลัพธ์ ผลลัพธ์ป้อนกลับสู่การปรับปรุง",
-            "ส่งเสริมการเรียนรู้และวงจรปรับปรุงต่อเนื่อง (cycles of improvement)"
+            "Non-prescriptive — asks 'how/what'; adaptable to any organization",
+            "Systems perspective — view the organization as one interconnected machine, not 7 silos",
+            "Applicable at any level of maturity (any point on its journey)",
+            "Results-oriented — processes drive results; results feed back into improvement",
+            "Promotes learning and continuous cycles of improvement (cycles of improvement)"
         ],
         "how_what": {
-            "process": "หมวด 1–6 ถามว่า \"ทำอย่างไร\" (กระบวนการ — ให้คะแนนแบบ ADLI)",
-            "results": "หมวด 7 ถามว่า \"ผลลัพธ์เป็นอย่างไร\" (ผลลัพธ์ — ให้คะแนนแบบ LeTCI)"
+            "process": "Categories 1–6 ask \"how do you do it\" (processes — scored with ADLI)",
+            "results": "Category 7 asks \"what are the results\" (results — scored with LeTCI)"
         },
         "response_guidelines": [
-            "ตอบให้เฉพาะเจาะจงและวัดได้ ไม่ใช่เล่าเหตุการณ์/เกร็ดเล็กน้อย",
-            "ผูกคำตอบกับ OP และบริบทขององค์กรเสมอ",
-            "ทุกคำตอบมีหลักฐาน ≥ 1 และตัววัด (การจัดการโดยใช้ข้อมูลจริง)",
-            "ผลลัพธ์ (หมวด 7) ต้องมีอนุกรมเวลาและการเปรียบเทียบ (Trends + Comparisons)",
-            "ระบุจุดแข็งและโอกาสพัฒนา (OFI) ทุกหัวข้อ"
+            "Answer specifically and measurably; do not narrate events/minor anecdotes.",
+            "Always tie answers to the OP and the organizational context.",
+            "Every answer has ≥ 1 piece of evidence and a measure (Management by Fact).",
+            "Results (Category 7) must have time series and comparisons (Trends + Comparisons).",
+            "Identify strengths and opportunities for improvement (OFIs) for every Item."
         ],
-        "op_framing": "OP คือการประเมินตนเองชิ้นแรกและเป็นบริบทที่กำหนดทุกคำตอบในหมวด 1–7 — ข้อมูล OP ที่ขัดแย้งหรือขาดหายเป็นสัญญาณการวางแผนปรับปรุงตั้งแต่ต้น"
+        "op_framing": "The OP is the first self-assessment and the context that shapes every answer in Categories 1–7 — conflicting or missing OP information is a signal for improvement planning from the outset."
     },
     "op": {
-        "title": "โครงร่างองค์กร (Organizational Profile)",
+        "title": "Organizational Profile",
         "sections": [
             {
                 "code": "P.1",
-                "title": "ลักษณะองค์กร (Organizational Description)",
+                "title": "Organizational Description",
                 "groups": [
                     {
-                        "code": "P.1ก",
-                        "title": "สภาพแวดล้อมขององค์กร",
+                        "code": "P.1a",
+                        "title": "Organizational Environment",
                         "items": [
                             {
-                                "code": "P.1ก(1)",
-                                "title": "การจัดการศึกษา วิจัย และบริการทางการศึกษาอื่น ๆ",
-                                "guide": "สถาบันมีการจัดการศึกษา วิจัย และบริการฯ หลักอะไรบ้าง ความสำคัญเชิงเปรียบเทียบ (รวมถึงร้อยละของรายได้\/งบประมาณ) ที่มีต่อความสำเร็จของสถาบันคืออะไร และสถาบันส่งมอบด้วยวิธีใด"
+                                "code": "P.1a(1)",
+                                "title": "Educational Programs, Research, and Other Educational Services",
+                                "guide": "What are the institution's main educational programs, research, and services? What is their comparative importance (including percentage of revenue\/budget) to the institution's success, and by what methods does the institution deliver them?"
                             },
                             {
-                                "code": "P.1ก(2)",
-                                "title": "พันธกิจ วิสัยทัศน์ ค่านิยม และวัฒนธรรม",
-                                "guide": "พันธกิจ วิสัยทัศน์ ค่านิยมของสถาบันคืออะไร ลักษณะเฉพาะของวัฒนธรรมองค์กรคืออะไร สมรรถนะหลัก (core competencies) คืออะไร และเกี่ยวข้องอย่างไรกับพันธกิจและวิสัยทัศน์"
+                                "code": "P.1a(2)",
+                                "title": "Mission, Vision, Values, and Culture",
+                                "guide": "What are the institution's mission, vision, and values? What are the distinctive characteristics of its organizational culture? What are its core competencies, and how do they relate to the mission and vision?"
                             },
                             {
-                                "code": "P.1ก(3)",
-                                "title": "ลักษณะโดยรวมของบุคลากร",
-                                "guide": "ลักษณะโดยรวมของบุคลากรเป็นอย่างไร รวมถึงกลุ่ม\/ประเภทของคณาจารย์และบุคลากร ปัจจัยขับเคลื่อนความผูกพันที่สำคัญ และการเปลี่ยนแปลงสำคัญด้านขีดความสามารถ อัตรากำลัง และองค์ประกอบของบุคลากร"
+                                "code": "P.1a(3)",
+                                "title": "Workforce Profile",
+                                "guide": "What is the overall profile of the workforce, including faculty and staff groups\/categories, key engagement drivers, and significant changes in workforce capability, capacity, and composition?"
                             },
                             {
-                                "code": "P.1ก(4)",
-                                "title": "สินทรัพย์",
-                                "guide": "สถาบันมีสินทรัพย์ที่สำคัญอะไรบ้าง เช่น อาคารสถานที่ อุปกรณ์ เทคโนโลยี และทรัพย์สินทางปัญญา"
+                                "code": "P.1a(4)",
+                                "title": "Assets",
+                                "guide": "What are the institution's key assets, such as facilities, equipment, technology, and intellectual property?"
                             },
                             {
-                                "code": "P.1ก(5)",
-                                "title": "สภาพแวดล้อมด้านกฎระเบียบข้อบังคับ",
-                                "guide": "มาตรฐานและข้อกำหนด การรับรองคุณภาพ การรับรอง หรือข้อกำหนดการขึ้นทะเบียนที่สำคัญที่สถาบันนำมาปฏิบัติมีอะไรบ้าง"
+                                "code": "P.1a(5)",
+                                "title": "Regulatory Environment",
+                                "guide": "What are the key standards and requirements, accreditations, certifications, or registration requirements that the institution applies?"
                             }
                         ]
                     },
                     {
-                        "code": "P.1ข",
-                        "title": "ความสัมพันธ์ระดับองค์กร",
+                        "code": "P.1b",
+                        "title": "Organizational Relationships",
                         "items": [
                             {
-                                "code": "P.1ข(1)",
-                                "title": "โครงสร้างองค์กร",
-                                "guide": "โครงสร้างการนำองค์กรและการกำกับดูแลองค์กรมีลักษณะอย่างไร ส่วนประกอบสำคัญของระบบการนำองค์กรมีอะไรบ้าง และระบบการรายงานระหว่างคณะกรรมการกำกับดูแลองค์กร ผู้นำระดับสูง และองค์กรแม่เป็นอย่างไร"
+                                "code": "P.1b(1)",
+                                "title": "Organizational Structure",
+                                "guide": "What are the leadership and governance structures of the organization? What are the key components of the leadership system, and what are the reporting relationships among the governing board, senior leaders, and the parent organization?"
                             },
                             {
-                                "code": "P.1ข(2)",
-                                "title": "ผู้เรียน ลูกค้ากลุ่มอื่น และผู้มีส่วนได้ส่วนเสีย",
-                                "guide": "ส่วนตลาด ผู้เรียน ลูกค้ากลุ่มอื่น และผู้มีส่วนได้ส่วนเสียที่สำคัญมีอะไรบ้าง กลุ่มเหล่านี้มีความต้องการและความคาดหวังที่สำคัญอะไรต่อการจัดการศึกษา วิจัย และบริการฯ และอะไรคือความแตกต่างของแต่ละกลุ่ม"
+                                "code": "P.1b(2)",
+                                "title": "Students, Other Customers, and Stakeholders",
+                                "guide": "What are the key market segments, students, other customers, and stakeholders? What are their key needs and expectations for educational programs, research, and services, and how do the groups differ?"
                             },
                             {
-                                "code": "P.1ข(3)",
-                                "title": "ผู้ส่งมอบ คู่ความร่วมมือที่เป็นทางการและไม่เป็นทางการ",
-                                "guide": "ผู้ส่งมอบ คู่ความร่วมมือที่เป็นทางการและไม่เป็นทางการที่สำคัญมีกี่ประเภท อะไรบ้าง แต่ละกลุ่มมีบทบาทอย่างไรต่อการส่งมอบหลักสูตร\/บริการฯ และการนำนวัตกรรมไปใช้ และข้อกำหนดสำคัญของเครือข่ายอุปทานคืออะไร"
+                                "code": "P.1b(3)",
+                                "title": "Suppliers, Formal and Informal Partners",
+                                "guide": "How many types of key suppliers and formal and informal partners are there, and what are they? What role does each group play in delivering programs\/services and in implementing innovation, and what are the key requirements of the supply network?"
                             }
                         ]
                     }
@@ -219,53 +219,53 @@
             },
             {
                 "code": "P.2",
-                "title": "สถานการณ์ขององค์กร (Organizational Situation)",
+                "title": "Organizational Situation",
                 "groups": [
                     {
-                        "code": "P.2ก",
-                        "title": "สภาพแวดล้อมด้านการแข่งขัน",
+                        "code": "P.2a",
+                        "title": "Competitive Environment",
                         "items": [
                             {
-                                "code": "P.2ก(1)",
-                                "title": "ตำแหน่งการแข่งขัน",
-                                "guide": "ขนาด ส่วนแบ่ง และการเติบโตในวงการศึกษาหรือตลาดที่สถาบันดำเนินการอยู่เป็นอย่างไร คู่แข่งมีจำนวนเท่าใดและประเภทอะไรบ้าง อะไรทำให้สถาบันแตกต่างจากคู่แข่งทั้งระดับชาติและนานาชาติ"
+                                "code": "P.2a(1)",
+                                "title": "Competitive Position",
+                                "guide": "What are the size, share, and growth of the education sector or market in which the institution operates? How many competitors are there and of what types? What differentiates the institution from its competitors, both nationally and internationally?"
                             },
                             {
-                                "code": "P.2ก(2)",
-                                "title": "การเปลี่ยนแปลงความสามารถในการแข่งขัน",
-                                "guide": "การเปลี่ยนแปลงที่สำคัญซึ่งมีผลต่อสถานการณ์การแข่งขันของสถาบัน รวมถึงการเปลี่ยนแปลงที่สร้างโอกาสเพื่อสร้างความร่วมมือและนวัตกรรมคืออะไร"
+                                "code": "P.2a(2)",
+                                "title": "Changes in Competitiveness",
+                                "guide": "What key changes affect the institution's competitive situation, including changes that create opportunities for collaboration and innovation?"
                             },
                             {
-                                "code": "P.2ก(3)",
-                                "title": "ข้อมูลเชิงเปรียบเทียบ",
-                                "guide": "แหล่งที่มาที่สำคัญสำหรับข้อมูลเชิงเปรียบเทียบและเชิงแข่งขันทั้งในและนอกวงการศึกษาคืออะไร และสถาบันมีข้อจำกัดอะไรในการได้มาหรือใช้ประโยชน์จากข้อมูลเหล่านี้"
+                                "code": "P.2a(3)",
+                                "title": "Comparative Data",
+                                "guide": "What are the key sources of comparative and competitive data, both within and outside the education sector, and what limitations does the institution face in obtaining or using these data?"
                             }
                         ]
                     },
                     {
-                        "code": "P.2ข",
-                        "title": "บริบทเชิงกลยุทธ์",
+                        "code": "P.2b",
+                        "title": "Strategic Context",
                         "items": [
                             {
-                                "code": "P.2ข(1)",
-                                "title": "ความท้าทายเชิงกลยุทธ์ที่สำคัญ (ด้านการศึกษา การปฏิบัติการ ความรับผิดชอบต่อสังคม และด้านบุคลากร)",
-                                "guide": "ความท้าทายเชิงกลยุทธ์และภัยคุกคามที่สำคัญของสถาบันคืออะไรบ้าง ครอบคลุมด้านการจัดการศึกษา การปฏิบัติการ ความรับผิดชอบต่อสังคม และด้านบุคลากร"
+                                "code": "P.2b(1)",
+                                "title": "Key Strategic Challenges (Educational, Operational, Societal Responsibility, and Workforce)",
+                                "guide": "What are the institution's key strategic challenges and threats, covering educational programs, operations, societal responsibility, and the workforce?"
                             },
                             {
-                                "code": "P.2ข(2)",
-                                "title": "ความได้เปรียบเชิงกลยุทธ์ที่สำคัญ (ด้านการศึกษา การปฏิบัติการ ความรับผิดชอบต่อสังคม และด้านบุคลากร)",
-                                "guide": "ความได้เปรียบเชิงกลยุทธ์และโอกาสเชิงกลยุทธ์ที่สำคัญของสถาบันคืออะไรบ้าง ครอบคลุมด้านการจัดการศึกษา การปฏิบัติการ ความรับผิดชอบต่อสังคม และด้านบุคลากร"
+                                "code": "P.2b(2)",
+                                "title": "Key Strategic Advantages (Educational, Operational, Societal Responsibility, and Workforce)",
+                                "guide": "What are the institution's key strategic advantages and strategic opportunities, covering educational programs, operations, societal responsibility, and the workforce?"
                             }
                         ]
                     },
                     {
-                        "code": "P.2ค",
-                        "title": "ระบบการปรับปรุงผลการดำเนินการ",
+                        "code": "P.2c",
+                        "title": "Performance Improvement System",
                         "items": [
                             {
-                                "code": "P.2ค",
-                                "title": "ระบบการปรับปรุงผลการดำเนินการ",
-                                "guide": "ระบบการปรับปรุงผลการดำเนินการโดยรวมของสถาบันมีอะไรบ้าง รวมถึงเครื่องมือและกระบวนการประเมินผล การเรียนรู้ระดับองค์กร และนวัตกรรม"
+                                "code": "P.2c",
+                                "title": "Performance Improvement System",
+                                "guide": "What are the institution's overall performance improvement systems, including evaluation tools and processes, organizational learning, and innovation?"
                             }
                         ]
                     }
@@ -277,15 +277,15 @@
         {
             "n": 1,
             "key": "leadership",
-            "title": "การนำองค์กร",
+            "title": "Leadership",
             "points": 115,
             "scoring": "ADLI",
             "type": "process",
             "items": [
                 {
                     "code": "1.1",
-                    "title": "การนำองค์กรโดยผู้นำระดับสูง",
-                    "overall_q": "ผู้นำระดับสูงนำองค์กรอย่างไร",
+                    "title": "Senior Leadership",
+                    "overall_q": "How do senior leaders lead the organization?",
                     "points": 65,
                     "kpi": [
                         "7-4-079",
@@ -294,36 +294,36 @@
                     ],
                     "areas": [
                         {
-                            "code": "1.1ก(1)",
-                            "title": "กำหนดพันธกิจ วิสัยทัศน์และค่านิยม",
-                            "guide": "ผู้นำระดับสูงกำหนดพันธกิจ วิสัยทัศน์ และค่านิยมขององค์กรอย่างไร และถ่ายทอดสู่การปฏิบัติอย่างไร"
+                            "code": "1.1a(1)",
+                            "title": "Setting Mission, Vision, and Values",
+                            "guide": "How do senior leaders set the organization's mission, vision, and values, and how do they deploy them into practice?"
                         },
                         {
-                            "code": "1.1ก(2)",
-                            "title": "การส่งเสริมการประพฤติปฏิบัติตามกฎหมายและการประพฤติปฏิบัติอย่างมีจริยธรรม",
-                            "guide": "ผู้นำระดับสูงส่งเสริมการประพฤติปฏิบัติตามกฎหมายและการประพฤติอย่างมีจริยธรรม และเป็นแบบอย่างอย่างไร"
+                            "code": "1.1a(2)",
+                            "title": "Promoting Legal and Ethical Behavior",
+                            "guide": "How do senior leaders promote legal and ethical behavior and serve as role models?"
                         },
                         {
-                            "code": "1.1ข",
-                            "title": "การสื่อสาร",
-                            "guide": "ผู้นำระดับสูงสื่อสารและสร้างความผูกพันกับบุคลากร ผู้เรียน ลูกค้ากลุ่มอื่น และผู้มีส่วนได้ส่วนเสียอย่างไร"
+                            "code": "1.1b",
+                            "title": "Communication",
+                            "guide": "How do senior leaders communicate with and engage the workforce, students, other customers, and stakeholders?"
                         },
                         {
-                            "code": "1.1ค(1)",
-                            "title": "การสร้างสภาพแวดล้อมเพื่อความสำเร็จ",
-                            "guide": "ผู้นำระดับสูงสร้างสภาพแวดล้อมเพื่อความสำเร็จในปัจจุบันและอนาคตอย่างไร"
+                            "code": "1.1c(1)",
+                            "title": "Creating an Environment for Success",
+                            "guide": "How do senior leaders create an environment for success now and in the future?"
                         },
                         {
-                            "code": "1.1ค(2)",
-                            "title": "การทำให้เกิดการมุ่งเน้นการปฏิบัติ",
-                            "guide": "ผู้นำระดับสูงทำให้เกิดการมุ่งเน้นการปฏิบัติเพื่อบรรลุพันธกิจและวัตถุประสงค์อย่างไร"
+                            "code": "1.1c(2)",
+                            "title": "Creating a Focus on Action",
+                            "guide": "How do senior leaders create a focus on action to achieve the mission and objectives?"
                         }
                     ]
                 },
                 {
                     "code": "1.2",
-                    "title": "การกำกับดูแลองค์กรและการสร้างประโยชน์ให้สังคม",
-                    "overall_q": "สถาบันดำเนินการอย่างไรในการกำกับดูแลองค์กรและสร้างประโยชน์ให้สังคม",
+                    "title": "Governance and Societal Contributions",
+                    "overall_q": "How does the institution govern the organization and make societal contributions?",
                     "points": 50,
                     "kpi": [
                         "7-4-076",
@@ -337,39 +337,39 @@
                     ],
                     "areas": [
                         {
-                            "code": "1.2ก(1)",
-                            "title": "ระบบการกำกับดูแลองค์กร",
-                            "guide": "องค์กรมีระบบกำกับดูแล (governance) ที่รับผิดชอบและโปร่งใสในด้านใดบ้างอย่างไร"
+                            "code": "1.2a(1)",
+                            "title": "Governance System",
+                            "guide": "In what ways does the organization have a responsible and transparent governance system, and how?"
                         },
                         {
-                            "code": "1.2ก(2)",
-                            "title": "การประเมินผลการดำเนินการ",
-                            "guide": "องค์กรประเมินผลการดำเนินงานของผู้นำระดับสูงและคณะกรรมการกำกับดูแลอย่างไร"
+                            "code": "1.2a(2)",
+                            "title": "Performance Evaluation",
+                            "guide": "How does the organization evaluate the performance of senior leaders and the governing board?"
                         },
                         {
-                            "code": "1.2ก(3)",
-                            "title": "ผลการดำเนินการขององค์กร",
-                            "guide": "องค์กรทบทวนและใช้ผลการประเมินไปพัฒนาประสิทธิผลของผู้นำและระบบกำกับดูแลอย่างไร"
+                            "code": "1.2a(3)",
+                            "title": "Organizational Performance",
+                            "guide": "How does the organization review and use evaluation results to improve the effectiveness of leaders and the governance system?"
                         },
                         {
-                            "code": "1.2ข(1)",
-                            "title": "การประพฤติตามกฎหมายและกฎระเบียบ",
-                            "guide": "องค์กรคาดการณ์และจัดการความกังวลด้านการปฏิบัติตามกฎหมาย กฎระเบียบ และการรับรองอย่างไร"
+                            "code": "1.2b(1)",
+                            "title": "Legal and Regulatory Behavior",
+                            "guide": "How does the organization anticipate and manage concerns related to compliance with laws, regulations, and accreditations?"
                         },
                         {
-                            "code": "1.2ข(2)",
-                            "title": "การประพฤติปฏิบัติอย่างมีจริยธรรม",
-                            "guide": "องค์กรส่งเสริมและทำให้มั่นใจว่ามีการประพฤติปฏิบัติอย่างมีจริยธรรมในทุกปฏิสัมพันธ์อย่างไร"
+                            "code": "1.2b(2)",
+                            "title": "Ethical Behavior",
+                            "guide": "How does the organization promote and ensure ethical behavior in all interactions?"
                         },
                         {
-                            "code": "1.2ค(1)",
-                            "title": "ความผาสุกของสังคม",
-                            "guide": "องค์กรคำนึงถึงความผาสุกของสังคมและสร้างประโยชน์ให้ระบบสิ่งแวดล้อม สังคม และเศรษฐกิจอย่างไร"
+                            "code": "1.2c(1)",
+                            "title": "Societal Well-Being",
+                            "guide": "How does the organization consider societal well-being and benefit the environmental, social, and economic systems?"
                         },
                         {
-                            "code": "1.2ค(2)",
-                            "title": "การสนับสนุนชุมชน",
-                            "guide": "องค์กรสนับสนุนและสร้างความเข้มแข็งให้ชุมชนที่สำคัญอย่างไร"
+                            "code": "1.2c(2)",
+                            "title": "Community Support",
+                            "guide": "How does the organization support and strengthen its key communities?"
                         }
                     ]
                 }
@@ -378,15 +378,15 @@
         {
             "n": 2,
             "key": "strategy",
-            "title": "กลยุทธ์",
+            "title": "Strategy",
             "points": 90,
             "scoring": "ADLI",
             "type": "process",
             "items": [
                 {
                     "code": "2.1",
-                    "title": "การจัดทำกลยุทธ์",
-                    "overall_q": "สถาบันมีวิธีการอย่างไรในการจัดทำกลยุทธ์",
+                    "title": "Strategy Development",
+                    "overall_q": "How does the institution develop its strategy?",
                     "points": 45,
                     "kpi": [
                         "7-5-079",
@@ -401,41 +401,41 @@
                     ],
                     "areas": [
                         {
-                            "code": "2.1ก(1)",
-                            "title": "กระบวนการวางแผนกลยุทธ์",
-                            "guide": "องค์กรมีกระบวนการวางแผนกลยุทธ์อย่างไร ใครเกี่ยวข้อง และกรอบเวลาสั้น/ยาวเป็นอย่างไร"
+                            "code": "2.1a(1)",
+                            "title": "Strategic Planning Process",
+                            "guide": "What is the organization's strategic planning process, who is involved, and what are the short- and long-term time horizons?"
                         },
                         {
-                            "code": "2.1ก(2)",
-                            "title": "การพิจารณากลยุทธ์",
-                            "guide": "องค์กรรวบรวมและวิเคราะห์ข้อมูลเพื่อพิจารณาในการจัดทำกลยุทธ์อย่างไร"
+                            "code": "2.1a(2)",
+                            "title": "Strategy Considerations",
+                            "guide": "How does the organization collect and analyze data for consideration in developing strategy?"
                         },
                         {
-                            "code": "2.1ก(3)",
-                            "title": "โอกาสเชิงกลยุทธ์ และโอกาสคุ้มเสี่ยง",
-                            "guide": "องค์กรตัดสินใจเรื่องโอกาสเชิงกลยุทธ์และโอกาสคุ้มเสี่ยง (intelligent risks) อย่างไร"
+                            "code": "2.1a(3)",
+                            "title": "Strategic Opportunities and Intelligent Risks",
+                            "guide": "How does the organization make decisions about strategic opportunities and intelligent risks?"
                         },
                         {
-                            "code": "2.1ก(4)",
-                            "title": "การจัดจ้างผู้รับจ้างภายนอก และสมรรถนะหลักขององค์กร",
-                            "guide": "องค์กรตัดสินใจเรื่องการจัดจ้างภายนอกและใช้สมรรถนะหลัก (core competencies) อย่างไร"
+                            "code": "2.1a(4)",
+                            "title": "Outsourcing and Core Competencies",
+                            "guide": "How does the organization make decisions about outsourcing and the use of core competencies?"
                         },
                         {
-                            "code": "2.1ข(1)",
-                            "title": "วัตถุประสงค์เชิงกลยุทธ์ที่สำคัญ",
-                            "guide": "องค์กรกำหนดวัตถุประสงค์เชิงกลยุทธ์ที่สำคัญ เป้าหมาย และกรอบเวลาอย่างไร"
+                            "code": "2.1b(1)",
+                            "title": "Key Strategic Objectives",
+                            "guide": "How does the organization set key strategic objectives, goals, and timelines?"
                         },
                         {
-                            "code": "2.1ข(2)",
-                            "title": "การพิจารณาวัตถุประสงค์เชิงกลยุทธ์",
-                            "guide": "วัตถุประสงค์เชิงกลยุทธ์สร้างสมดุลระหว่างความท้าทาย โอกาส และความต้องการของผู้มีส่วนได้ส่วนเสียอย่างไร"
+                            "code": "2.1b(2)",
+                            "title": "Consideration of Strategic Objectives",
+                            "guide": "How do the strategic objectives balance challenges, opportunities, and stakeholder needs?"
                         }
                     ]
                 },
                 {
                     "code": "2.2",
-                    "title": "การนำกลยุทธ์ไปปฏิบัติ",
-                    "overall_q": "สถาบันนำกลยุทธ์ไปสู่การปฏิบัติอย่างไร",
+                    "title": "Strategy Implementation",
+                    "overall_q": "How does the institution implement its strategy?",
                     "points": 45,
                     "kpi": [
                         "7-5-083",
@@ -451,39 +451,39 @@
                     ],
                     "areas": [
                         {
-                            "code": "2.2ก(1)",
-                            "title": "แผนปฏิบัติการ",
-                            "guide": "องค์กรจัดทำแผนปฏิบัติการที่สำคัญทั้งระยะสั้นและระยะยาวอย่างไร"
+                            "code": "2.2a(1)",
+                            "title": "Action Plans",
+                            "guide": "How does the organization develop its key short- and long-term action plans?"
                         },
                         {
-                            "code": "2.2ก(2)",
-                            "title": "การนำแผนปฏิบัติการไปปฏิบัติ",
-                            "guide": "องค์กรถ่ายทอดและนำแผนปฏิบัติการไปปฏิบัติทั่วทั้งองค์กรเพื่อให้บรรลุผลอย่างไร"
+                            "code": "2.2a(2)",
+                            "title": "Action Plan Implementation",
+                            "guide": "How does the organization deploy and implement action plans throughout the organization to achieve results?"
                         },
                         {
-                            "code": "2.2ก(3)",
-                            "title": "การจัดสรรทรัพยากร",
-                            "guide": "องค์กรจัดสรรทรัพยากร (การเงินและอื่นๆ) ให้แผนปฏิบัติการบรรลุผลอย่างไร"
+                            "code": "2.2a(3)",
+                            "title": "Resource Allocation",
+                            "guide": "How does the organization allocate resources (financial and other) so that action plans are achieved?"
                         },
                         {
-                            "code": "2.2ก(4)",
-                            "title": "แผนด้านบุคลากร",
-                            "guide": "องค์กรจัดทำแผนด้านบุคลากรที่สำคัญเพื่อรองรับแผนปฏิบัติการอย่างไร"
+                            "code": "2.2a(4)",
+                            "title": "Workforce Plans",
+                            "guide": "How does the organization develop the key workforce plans to support action plans?"
                         },
                         {
-                            "code": "2.2ก(5)",
-                            "title": "ตัววัดผลการดำเนินการ",
-                            "guide": "องค์กรกำหนดตัววัดเพื่อติดตามความก้าวหน้าและประสิทธิผลของแผนปฏิบัติการอย่างไร"
+                            "code": "2.2a(5)",
+                            "title": "Performance Measures",
+                            "guide": "How does the organization define measures to track the progress and effectiveness of action plans?"
                         },
                         {
-                            "code": "2.2ก(6)",
-                            "title": "การคาดการณ์ผลการดำเนินการ",
-                            "guide": "องค์กรคาดการณ์ผลการดำเนินการตามตัววัดและเทียบกับคู่แข่ง/คู่เทียบอย่างไร"
+                            "code": "2.2a(6)",
+                            "title": "Performance Projections",
+                            "guide": "How does the organization project performance on its measures and compare it with competitors/comparable organizations?"
                         },
                         {
-                            "code": "2.2ข",
-                            "title": "การปรับเปลี่ยนแผนปฏิบัติการ",
-                            "guide": "องค์กรปรับเปลี่ยนแผนปฏิบัติการและนำไปปฏิบัติใหม่เมื่อสถานการณ์เปลี่ยนอย่างไร"
+                            "code": "2.2b",
+                            "title": "Modification of Action Plans",
+                            "guide": "How does the organization modify action plans and re-implement them when circumstances change?"
                         }
                     ]
                 }
@@ -492,15 +492,15 @@
         {
             "n": 3,
             "key": "customers",
-            "title": "ลูกค้า",
+            "title": "Customers",
             "points": 85,
             "scoring": "ADLI",
             "type": "process",
             "items": [
                 {
                     "code": "3.1",
-                    "title": "ความคาดหวังของลูกค้า",
-                    "overall_q": "สถาบันมีวิธีการอย่างไรในการรับฟังผู้เรียนและลูกค้ากลุ่มอื่น และกำหนดการจัดการศึกษา วิจัย และบริการฯ เพื่อตอบสนองความต้องการของผู้เรียนและลูกค้ากลุ่มอื่น",
+                    "title": "Customer Expectations",
+                    "overall_q": "How does the institution listen to students and other customers and determine educational programs, research, and services to meet the needs of students and other customers?",
                     "points": 40,
                     "kpi": [
                         "7-2-039",
@@ -510,31 +510,31 @@
                     ],
                     "areas": [
                         {
-                            "code": "3.1ก(1)",
-                            "title": "ผู้เรียนและลูกค้ากลุ่มอื่นที่มีอยู่ในปัจจุบัน",
-                            "guide": "องค์กรรับฟังเสียงและเรียนรู้ความต้องการ/ความคาดหวังของผู้เรียนและลูกค้ากลุ่มอื่นในปัจจุบันอย่างไร"
+                            "code": "3.1a(1)",
+                            "title": "Current Students and Other Customers",
+                            "guide": "How does the organization listen to and learn the needs/expectations of current students and other customers?"
                         },
                         {
-                            "code": "3.1ก(2)",
-                            "title": "ผู้เรียนและลูกค้ากลุ่มอื่นที่พึงมี",
-                            "guide": "องค์กรรับฟังและเรียนรู้ความต้องการของผู้ที่อาจเป็นผู้เรียนและลูกค้ากลุ่มอื่นในอนาคตและของคู่แข่งอย่างไร"
+                            "code": "3.1a(2)",
+                            "title": "Potential Students and Other Customers",
+                            "guide": "How does the organization listen to and learn the needs of potential future students and other customers and of competitors' customers?"
                         },
                         {
-                            "code": "3.1ข(1)",
-                            "title": "การจำแนกกลุ่มผู้เรียนและลูกค้ากลุ่มอื่น",
-                            "guide": "องค์กรจำแนกกลุ่มผู้เรียนและลูกค้ากลุ่มอื่น และส่วนตลาดเพื่อมุ่งเน้นอย่างไร"
+                            "code": "3.1b(1)",
+                            "title": "Segmentation of Students and Other Customers",
+                            "guide": "How does the organization segment students, other customers, and market segments to focus on?"
                         },
                         {
-                            "code": "3.1ข(2)",
-                            "title": "การจัดหลักสูตรและบริการฯ",
-                            "guide": "องค์กรกำหนดหลักสูตร/บริการให้ตรงความต้องการของแต่ละกลุ่มผู้เรียนและลูกค้ากลุ่มอื่นอย่างไร"
+                            "code": "3.1b(2)",
+                            "title": "Programs and Services Offerings",
+                            "guide": "How does the organization determine the programs/services to meet the needs of each group of students and other customers?"
                         }
                     ]
                 },
                 {
                     "code": "3.2",
-                    "title": "ความผูกพันของลูกค้า",
-                    "overall_q": "สถาบันมีวิธีการอย่างไรในการสร้างความสัมพันธ์และเสริมสร้างประสบการณ์ของผู้เรียนและลูกค้ากลุ่มอื่น",
+                    "title": "Customer Engagement",
+                    "overall_q": "How does the institution build relationships and enhance the experience of students and other customers?",
                     "points": 45,
                     "kpi": [
                         "7-2-041",
@@ -547,29 +547,29 @@
                     ],
                     "areas": [
                         {
-                            "code": "3.2ก(1)",
-                            "title": "การจัดการความสัมพันธ์",
-                            "guide": "องค์กรสร้างและจัดการความสัมพันธ์กับผู้เรียนและลูกค้ากลุ่มอื่นเพื่อสร้างความผูกพันอย่างไร"
+                            "code": "3.2a(1)",
+                            "title": "Relationship Management",
+                            "guide": "How does the organization build and manage relationships with students and other customers to create engagement?"
                         },
                         {
-                            "code": "3.2ก(2)",
-                            "title": "การเข้าถึงและการสนับสนุนผู้เรียนและลูกค้ากลุ่มอื่น",
-                            "guide": "องค์กรทำให้ผู้เรียนและลูกค้ากลุ่มอื่นเข้าถึงและได้รับการสนับสนุน/ข้อมูลอย่างไร"
+                            "code": "3.2a(2)",
+                            "title": "Access and Support for Students and Other Customers",
+                            "guide": "How does the organization enable students and other customers to access and receive support/information?"
                         },
                         {
-                            "code": "3.2ก(3)",
-                            "title": "การจัดการข้อร้องเรียน",
-                            "guide": "องค์กรจัดการข้อร้องเรียนของผู้เรียนและลูกค้ากลุ่มอื่นให้ได้รับการแก้ไขและฟื้นความเชื่อมั่นอย่างไร"
+                            "code": "3.2a(3)",
+                            "title": "Complaint Management",
+                            "guide": "How does the organization manage complaints from students and other customers so that they are resolved and confidence is restored?"
                         },
                         {
-                            "code": "3.2ก(4)",
-                            "title": "การปฏิบัติอย่างเป็นธรรม",
-                            "guide": "องค์กรปฏิบัติต่อผู้เรียนและลูกค้ากลุ่มอื่นอย่างเป็นธรรมอย่างไร"
+                            "code": "3.2a(4)",
+                            "title": "Fair Treatment",
+                            "guide": "How does the organization treat students and other customers fairly?"
                         },
                         {
-                            "code": "3.2ข(1)",
-                            "title": "การค้นหาความพึงพอใจ ความไม่พึงพอใจและความผูกพันของผู้เรียนและลูกค้ากลุ่มอื่น",
-                            "guide": "องค์กรประเมินความพึงพอใจ ความไม่พึงพอใจ และความผูกพันของผู้เรียนและลูกค้ากลุ่มอื่นอย่างไร"
+                            "code": "3.2b(1)",
+                            "title": "Determining Satisfaction, Dissatisfaction, and Engagement of Students and Other Customers",
+                            "guide": "How does the organization assess the satisfaction, dissatisfaction, and engagement of students and other customers?"
                         }
                     ]
                 }
@@ -578,15 +578,15 @@
         {
             "n": 4,
             "key": "measurement",
-            "title": "การวัด การวิเคราะห์ และการจัดการความรู้",
+            "title": "Measurement, Analysis, and Knowledge Management",
             "points": 90,
             "scoring": "ADLI",
             "type": "process",
             "items": [
                 {
                     "code": "4.1",
-                    "title": "การวัด วิเคราะห์ และปรับปรุงผลการดำเนินการขององค์กร",
-                    "overall_q": "สถาบันมีวิธีการอย่างไรในการวัด วิเคราะห์ ทบทวนและปรับปรุงผลการดำเนินการของสถาบัน",
+                    "title": "Measurement, Analysis, and Improvement of Organizational Performance",
+                    "overall_q": "How does the institution measure, analyze, review, and improve the institution's performance?",
                     "points": 45,
                     "kpi": [
                         "7-1-031",
@@ -598,31 +598,31 @@
                     ],
                     "areas": [
                         {
-                            "code": "4.1ก(1)",
-                            "title": "ตัววัดผลการดำเนินการ",
-                            "guide": "องค์กรเลือก รวบรวม และใช้ตัววัดในการติดตามการปฏิบัติงานประจำวันและผลโดยรวมอย่างไร"
+                            "code": "4.1a(1)",
+                            "title": "Performance Measures",
+                            "guide": "How does the organization select, collect, and use measures to track daily operations and overall results?"
                         },
                         {
-                            "code": "4.1ก(2)",
-                            "title": "ข้อมูลเชิงเปรียบเทียบ",
-                            "guide": "องค์กรเลือกและใช้ข้อมูลเชิงเปรียบเทียบและข้อมูลผู้เรียนและลูกค้ากลุ่มอื่นเพื่อสนับสนุนการตัดสินใจอย่างไร"
+                            "code": "4.1a(2)",
+                            "title": "Comparative Data",
+                            "guide": "How does the organization select and use comparative data and student and other customer data to support decision making?"
                         },
                         {
-                            "code": "4.1ข(1)",
-                            "title": "การวิเคราะห์ผลการดำเนินการ",
-                            "guide": "องค์กรวิเคราะห์ผลการดำเนินการเพื่อประเมินความสำเร็จและความสามารถในการแข่งขันอย่างไร"
+                            "code": "4.1b(1)",
+                            "title": "Performance Analysis",
+                            "guide": "How does the organization analyze performance to assess success and competitiveness?"
                         },
                         {
-                            "code": "4.1ข(2)",
-                            "title": "การทบทวนผลการดำเนินการ",
-                            "guide": "องค์กรทบทวนผลการดำเนินการและขีดความสามารถเพื่อนำไปปรับปรุงและสร้างนวัตกรรมอย่างไร"
+                            "code": "4.1b(2)",
+                            "title": "Performance Review",
+                            "guide": "How does the organization review performance and capabilities in order to improve and innovate?"
                         }
                     ]
                 },
                 {
                     "code": "4.2",
-                    "title": "การจัดการสารสนเทศและการจัดการความรู้",
-                    "overall_q": "สถาบันมีวิธีการอย่างไรในการจัดการสารสนเทศและสินทรัพย์ทางความรู้ของสถาบัน",
+                    "title": "Information and Knowledge Management",
+                    "overall_q": "How does the institution manage the institution's information and knowledge assets?",
                     "points": 45,
                     "kpi": [
                         "7-1-023",
@@ -634,34 +634,34 @@
                     ],
                     "areas": [
                         {
-                            "code": "4.2ก(1)",
-                            "title": "คุณภาพ",
-                            "guide": "องค์กรทำให้มั่นใจในคุณภาพ (ความถูกต้อง ครบถ้วน ทันสมัย) ของข้อมูลและสารสนเทศอย่างไร"
+                            "code": "4.2a(1)",
+                            "title": "Quality",
+                            "guide": "How does the organization ensure the quality (accuracy, completeness, currency) of data and information?"
                         },
                         {
-                            "code": "4.2ก(2)",
-                            "title": "ความพร้อมใช้งาน",
-                            "guide": "องค์กรทำให้ข้อมูลและสารสนเทศพร้อมใช้งานสำหรับผู้ใช้ที่เกี่ยวข้องอย่างไร"
+                            "code": "4.2a(2)",
+                            "title": "Availability",
+                            "guide": "How does the organization make data and information available to relevant users?"
                         },
                         {
-                            "code": "4.2ก(3)",
-                            "title": "ความมั่นคงปลอดภัยไซเบอร์",
-                            "guide": "องค์กรจัดการความมั่นคงปลอดภัยไซเบอร์ (cybersecurity) ของข้อมูลและระบบสารสนเทศอย่างไร"
+                            "code": "4.2a(3)",
+                            "title": "Cybersecurity",
+                            "guide": "How does the organization manage the cybersecurity of data and information systems?"
                         },
                         {
-                            "code": "4.2ข(1)",
-                            "title": "การจัดการความรู้",
-                            "guide": "องค์กรจัดการความรู้ขององค์กร รวบรวม ถ่ายทอด และใช้สินทรัพย์ความรู้อย่างไร"
+                            "code": "4.2b(1)",
+                            "title": "Knowledge Management",
+                            "guide": "How does the organization manage organizational knowledge, and collect, transfer, and use knowledge assets?"
                         },
                         {
-                            "code": "4.2ข(2)",
-                            "title": "วิธีปฏิบัติที่เป็นเลิศ",
-                            "guide": "องค์กรค้นหา แบ่งปัน และนำวิธีปฏิบัติที่เป็นเลิศ (best practices) ไปใช้อย่างไร"
+                            "code": "4.2b(2)",
+                            "title": "Best Practices",
+                            "guide": "How does the organization identify, share, and implement best practices?"
                         },
                         {
-                            "code": "4.2ค",
-                            "title": "การแสวงหาการสร้างนวัตกรรม",
-                            "guide": "องค์กรใช้ความรู้และทรัพยากรเพื่อแสวงหาและขับเคลื่อนการสร้างนวัตกรรมอย่างไร"
+                            "code": "4.2c",
+                            "title": "Pursuit of Innovation",
+                            "guide": "How does the organization use knowledge and resources to pursue and drive innovation?"
                         }
                     ]
                 }
@@ -670,15 +670,15 @@
         {
             "n": 5,
             "key": "workforce",
-            "title": "บุคลากร",
+            "title": "Workforce",
             "points": 85,
             "scoring": "ADLI",
             "type": "process",
             "items": [
                 {
                     "code": "5.1",
-                    "title": "สภาวะแวดล้อมด้านบุคลากร",
-                    "overall_q": "สถาบันมีวิธีการอย่างไร ในการสร้างสภาวะแวดล้อมด้านบุคลากรที่เกื้อหนุนและมีประสิทธิผล",
+                    "title": "Workforce Environment",
+                    "overall_q": "How does the institution build an effective and supportive workforce environment?",
                     "points": 40,
                     "kpi": [
                         "7-3-063",
@@ -694,41 +694,41 @@
                     ],
                     "areas": [
                         {
-                            "code": "5.1ก(1)",
-                            "title": "ความต้องการด้านขีดความสามารถและอัตรากำลัง",
-                            "guide": "องค์กรประเมินความต้องการด้านขีดความสามารถและอัตรากำลังของบุคลากรอย่างไร"
+                            "code": "5.1a(1)",
+                            "title": "Capability and Capacity Needs",
+                            "guide": "How does the organization assess the workforce's capability and capacity needs?"
                         },
                         {
-                            "code": "5.1ก(2)",
-                            "title": "บุคลากรใหม่",
-                            "guide": "องค์กรสรรหา ว่าจ้าง บรรจุ และรักษาบุคลากรใหม่อย่างไร"
+                            "code": "5.1a(2)",
+                            "title": "New Workforce Members",
+                            "guide": "How does the organization recruit, hire, place, and retain new workforce members?"
                         },
                         {
-                            "code": "5.1ก(3)",
-                            "title": "การจัดการการเปลี่ยนแปลงด้านบุคลากร",
-                            "guide": "องค์กรเตรียมและจัดการบุคลากรเมื่อมีการเปลี่ยนแปลงด้านขีดความสามารถและอัตรากำลังอย่างไร"
+                            "code": "5.1a(3)",
+                            "title": "Workforce Change Management",
+                            "guide": "How does the organization prepare for and manage the workforce when capability and capacity change?"
                         },
                         {
-                            "code": "5.1ก(4)",
-                            "title": "ความสำเร็จในงาน",
-                            "guide": "องค์กรจัดระบบและบริหารบุคลากรให้ทำงานสำเร็จและใช้สมรรถนะหลักขององค์กรอย่างไร"
+                            "code": "5.1a(4)",
+                            "title": "Work Accomplishment",
+                            "guide": "How does the organization organize and manage the workforce to accomplish work and use the organization's core competencies?"
                         },
                         {
-                            "code": "5.1ข(1)",
-                            "title": "สภาพแวดล้อมการทำงาน",
-                            "guide": "องค์กรทำให้มั่นใจในสุขภาพ ความปลอดภัย และสภาพแวดล้อมการทำงานที่ดีอย่างไร"
+                            "code": "5.1b(1)",
+                            "title": "Workplace Environment",
+                            "guide": "How does the organization ensure health, safety, and a good workplace environment?"
                         },
                         {
-                            "code": "5.1ข(2)",
-                            "title": "ค่าตอบแทน และสิทธิประโยชน์สำหรับบุคลากร",
-                            "guide": "องค์กรกำหนดค่าตอบแทน สิทธิประโยชน์ และนโยบายที่สนับสนุนบุคลากรอย่างไร"
+                            "code": "5.1b(2)",
+                            "title": "Compensation and Benefits for the Workforce",
+                            "guide": "How does the organization define compensation, benefits, and policies that support the workforce?"
                         }
                     ]
                 },
                 {
                     "code": "5.2",
-                    "title": "ความผูกพันของบุคลากร",
-                    "overall_q": "สถาบันมีวิธีการอย่างไรในการสร้างความผูกพันกับบุคลากร เพื่อให้คงอยู่และมีผลการปฏิบัติงานที่โดดเด่น",
+                    "title": "Workforce Engagement",
+                    "overall_q": "How does the institution engage the workforce so that they remain and achieve outstanding performance?",
                     "points": 45,
                     "kpi": [
                         "7-3-070",
@@ -748,39 +748,39 @@
                     ],
                     "areas": [
                         {
-                            "code": "5.2ก(1)",
-                            "title": "ปัจจัยขับเคลื่อนความผูกพัน",
-                            "guide": "องค์กรกำหนดปัจจัยขับเคลื่อนความผูกพันของบุคลากรแต่ละกลุ่มอย่างไร"
+                            "code": "5.2a(1)",
+                            "title": "Drivers of Engagement",
+                            "guide": "How does the organization determine the engagement drivers of each workforce group?"
                         },
                         {
-                            "code": "5.2ก(2)",
-                            "title": "การประเมินความผูกพัน",
-                            "guide": "องค์กรประเมินความผูกพันของบุคลากรและใช้ผลไปปรับปรุงอย่างไร"
+                            "code": "5.2a(2)",
+                            "title": "Assessment of Engagement",
+                            "guide": "How does the organization assess workforce engagement and use the results to improve?"
                         },
                         {
-                            "code": "5.2ข",
-                            "title": "วัฒนธรรมองค์กร",
-                            "guide": "องค์กรเสริมสร้างวัฒนธรรมองค์กรที่สื่อสารเปิดเผย ผลการดำเนินการดี และบุคลากรผูกพันอย่างไร"
+                            "code": "5.2b",
+                            "title": "Organizational Culture",
+                            "guide": "How does the organization foster an organizational culture characterized by open communication, high performance, and an engaged workforce?"
                         },
                         {
-                            "code": "5.2ค(1)",
-                            "title": "การจัดการผลการปฏิบัติงาน",
-                            "guide": "องค์กรจัดการผลการปฏิบัติงานของบุคลากรให้สนับสนุนผลการดำเนินการที่ดีและความผูกพันอย่างไร"
+                            "code": "5.2c(1)",
+                            "title": "Performance Management",
+                            "guide": "How does the organization manage workforce performance to support high performance and engagement?"
                         },
                         {
-                            "code": "5.2ค(2)",
-                            "title": "การพัฒนาผลการปฏิบัติงาน",
-                            "guide": "องค์กรพัฒนาบุคลากรและผู้นำผ่านระบบการเรียนรู้และพัฒนาอย่างไร"
+                            "code": "5.2c(2)",
+                            "title": "Performance Development",
+                            "guide": "How does the organization develop the workforce and leaders through learning and development systems?"
                         },
                         {
-                            "code": "5.2ค(3)",
-                            "title": "การพัฒนาอาชีพการงานและการวางแผนสืบทอดตำแหน่ง",
-                            "guide": "องค์กรจัดการการพัฒนาอาชีพและการวางแผนสืบทอดตำแหน่งของบุคลากรอย่างไร"
+                            "code": "5.2c(3)",
+                            "title": "Career Development and Succession Planning",
+                            "guide": "How does the organization manage career development and succession planning for the workforce?"
                         },
                         {
-                            "code": "5.2ค(4)",
-                            "title": "ความเท่าเทียมและการมีส่วนร่วม",
-                            "guide": "องค์กรสร้างความเท่าเทียม ความครอบคลุม และการมีส่วนร่วมของบุคลากรทุกกลุ่มอย่างไร"
+                            "code": "5.2c(4)",
+                            "title": "Equity and Participation",
+                            "guide": "How does the organization foster equity, inclusion, and participation of all workforce groups?"
                         }
                     ]
                 }
@@ -789,15 +789,15 @@
         {
             "n": 6,
             "key": "operations",
-            "title": "การปฏิบัติการ",
+            "title": "Operations",
             "points": 85,
             "scoring": "ADLI",
             "type": "process",
             "items": [
                 {
                     "code": "6.1",
-                    "title": "กระบวนการทำงาน",
-                    "overall_q": "สถาบันมีวิธีการออกแบบ จัดการและปรับปรุง การจัดการศึกษา วิจัย และบริการฯ รวมทั้งกระบวนการทำงานที่สำคัญอย่างไร",
+                    "title": "Work Processes",
+                    "overall_q": "How does the institution design, manage, and improve educational programs, research, and services, as well as key work processes?",
                     "points": 40,
                     "kpi": [
                         "7-1-001",
@@ -828,41 +828,41 @@
                     ],
                     "areas": [
                         {
-                            "code": "6.1ก(1)",
-                            "title": "ข้อกำหนดของหลักสูตรและบริการฯ",
-                            "guide": "องค์กรกำหนดข้อกำหนดที่สำคัญของหลักสูตรและบริการฯ อย่างไร"
+                            "code": "6.1a(1)",
+                            "title": "Program and Service Requirements",
+                            "guide": "How does the organization determine the key requirements of programs and services?"
                         },
                         {
-                            "code": "6.1ก(2)",
-                            "title": "การออกแบบหลักสูตรและบริการฯ",
-                            "guide": "องค์กรออกแบบหลักสูตรและบริการฯ ให้ตรงข้อกำหนดและความต้องการของผู้เรียนและลูกค้ากลุ่มอื่นอย่างไร"
+                            "code": "6.1a(2)",
+                            "title": "Program and Service Design",
+                            "guide": "How does the organization design programs and services to meet the requirements and needs of students and other customers?"
                         },
                         {
-                            "code": "6.1ก(3)",
-                            "title": "ข้อกำหนดของกระบวนการ",
-                            "guide": "องค์กรกำหนดข้อกำหนดที่สำคัญของกระบวนการทำงานอย่างไร"
+                            "code": "6.1a(3)",
+                            "title": "Process Requirements",
+                            "guide": "How does the organization determine key work process requirements?"
                         },
                         {
-                            "code": "6.1ก(4)",
-                            "title": "การออกแบบกระบวนการ",
-                            "guide": "องค์กรออกแบบกระบวนการทำงานให้เป็นไปตามข้อกำหนดที่สำคัญอย่างไร"
+                            "code": "6.1a(4)",
+                            "title": "Process Design",
+                            "guide": "How does the organization design work processes to meet key requirements?"
                         },
                         {
-                            "code": "6.1ข(1)",
-                            "title": "การนำกระบวนการไปปฏิบัติ",
-                            "guide": "องค์กรนำกระบวนการทำงานไปปฏิบัติและควบคุมให้เป็นไปตามข้อกำหนดในแต่ละวันอย่างไร"
+                            "code": "6.1b(1)",
+                            "title": "Process Implementation",
+                            "guide": "How does the organization implement and control work processes to meet requirements on a day-to-day basis?"
                         },
                         {
-                            "code": "6.1ข(2)",
-                            "title": "การปรับปรุงกระบวนการ",
-                            "guide": "องค์กรปรับปรุงกระบวนการทำงานเพื่อเพิ่มผลการดำเนินการ ลดความแปรปรวน และสร้างนวัตกรรมอย่างไร"
+                            "code": "6.1b(2)",
+                            "title": "Process Improvement",
+                            "guide": "How does the organization improve work processes to enhance performance, reduce variability, and innovate?"
                         }
                     ]
                 },
                 {
                     "code": "6.2",
-                    "title": "ประสิทธิผลของการปฏิบัติการ",
-                    "overall_q": "สถาบันมั่นใจได้อย่างไรว่าการปฏิบัติการขององค์กรมีการจัดการอย่างมีประสิทธิผล",
+                    "title": "Operational Effectiveness",
+                    "overall_q": "How does the institution ensure that the organization's operations are managed effectively?",
                     "points": 45,
                     "kpi": [
                         "7-1-023",
@@ -879,29 +879,29 @@
                     ],
                     "areas": [
                         {
-                            "code": "6.2ก",
-                            "title": "ประสิทธิภาพและประสิทธิผลของการปฏิบัติการ",
-                            "guide": "องค์กรจัดการต้นทุน ประสิทธิภาพ และประสิทธิผลโดยรวมของการปฏิบัติการอย่างไร"
+                            "code": "6.2a",
+                            "title": "Operational Efficiency and Effectiveness",
+                            "guide": "How does the organization manage costs, efficiency, and the overall effectiveness of operations?"
                         },
                         {
-                            "code": "6.2ข",
-                            "title": "การจัดการเครือข่ายอุปทาน",
-                            "guide": "องค์กรจัดการเครือข่ายอุปทาน (supply network) และคัดเลือก/ประเมินผู้ส่งมอบอย่างไร"
+                            "code": "6.2b",
+                            "title": "Supply Network Management",
+                            "guide": "How does the organization manage the supply network and select/evaluate suppliers?"
                         },
                         {
-                            "code": "6.2ค(1)",
-                            "title": "ความปลอดภัย",
-                            "guide": "องค์กรจัดให้มีสภาพแวดล้อมการปฏิบัติการที่ปลอดภัยอย่างไร"
+                            "code": "6.2c(1)",
+                            "title": "Safety",
+                            "guide": "How does the organization provide a safe operating environment?"
                         },
                         {
-                            "code": "6.2ค(2)",
-                            "title": "ความต่อเนื่องทางธุรกิจและความสามารถในการฟื้นตัวอย่างรวดเร็ว",
-                            "guide": "องค์กรทำให้มั่นใจในความต่อเนื่องของการดำเนินงานและความสามารถในการฟื้นตัวจากภาวะหยุดชะงักอย่างไร"
+                            "code": "6.2c(2)",
+                            "title": "Business Continuity and Resilience",
+                            "guide": "How does the organization ensure continuity of operations and the ability to recover from disruptions?"
                         },
                         {
-                            "code": "6.2ค(3)",
-                            "title": "การบริหารความเสี่ยง",
-                            "guide": "องค์กรบริหารความเสี่ยงด้านการปฏิบัติการและด้านอื่นเพื่อความต่อเนื่องและความยั่งยืนอย่างไร"
+                            "code": "6.2c(3)",
+                            "title": "Risk Management",
+                            "guide": "How does the organization manage operational and other risks for continuity and sustainability?"
                         }
                     ]
                 }
@@ -910,14 +910,14 @@
         {
             "n": 7,
             "key": "results",
-            "title": "ผลลัพธ์",
+            "title": "Results",
             "points": 450,
             "scoring": "LeTCI",
             "type": "results",
             "items": [
                 {
                     "code": "7.1",
-                    "title": "ผลลัพธ์ด้านการเรียนรู้ของผู้เรียน และบริการที่ตอบสนองต่อลูกค้ากลุ่มอื่นและด้านกระบวนการ",
+                    "title": "Student Learning, Customer-Focused Service, and Process Results",
                     "points": 120,
                     "kpi": [
                         "7-1-001",
@@ -961,30 +961,30 @@
                     ],
                     "areas": [
                         {
-                            "code": "7.1ก",
-                            "title": "ผลลัพธ์ด้านการเรียนรู้ของผู้เรียนและด้านบริการที่มุ่งเน้นลูกค้า",
-                            "guide": "ผลลัพธ์ของตัววัด\/ตัวชี้วัดสำคัญด้านการเรียนรู้ของผู้เรียนและผลการดำเนินการของบริการที่เกี่ยวข้องโดยตรงกับผู้เรียนและลูกค้ากลุ่มอื่นคืออะไร จำแนกตามการจัดการศึกษา\/วิจัย\/บริการฯ กลุ่มผู้เรียนและลูกค้า และส่วนตลาด"
+                            "code": "7.1a",
+                            "title": "Student Learning and Customer-Focused Service Results",
+                            "guide": "What are the results for key measures/indicators of student learning and of the performance of services directly related to students and other customers, segmented by educational program\/research\/service, student and customer group, and market segment?"
                         },
                         {
-                            "code": "7.1ข(1)",
-                            "title": "ประสิทธิภาพและประสิทธิผลของกระบวนการ",
-                            "guide": "ผลลัพธ์ด้านประสิทธิภาพและประสิทธิผลของกระบวนการทำงานสำคัญและกระบวนการสนับสนุน รวมถึงผลิตภาพ รอบเวลา ความปลอดภัย และการรักษาความปลอดภัยบนโลกไซเบอร์คืออะไร"
+                            "code": "7.1b(1)",
+                            "title": "Process Efficiency and Effectiveness",
+                            "guide": "What are the results for the efficiency and effectiveness of key work processes and support processes, including productivity, cycle time, safety, and cybersecurity?"
                         },
                         {
-                            "code": "7.1ข(2)",
-                            "title": "ความปลอดภัยและการเตรียมพร้อมต่อภาวะฉุกเฉิน",
-                            "guide": "ผลลัพธ์ด้านประสิทธิผลในระบบความปลอดภัยและการเตรียมพร้อมของสถาบันเพื่อรับมือภัยพิบัติ ภาวะฉุกเฉิน และภาวะพลิกผันคืออะไร"
+                            "code": "7.1b(2)",
+                            "title": "Safety and Emergency Preparedness",
+                            "guide": "What are the results for the effectiveness of the institution's safety system and its preparedness for disasters, emergencies, and disruptions?"
                         },
                         {
-                            "code": "7.1ค",
-                            "title": "ผลลัพธ์ด้านการจัดการเครือข่ายอุปทาน",
-                            "guide": "ผลลัพธ์ของตัววัด\/ตัวชี้วัดสำคัญด้านการจัดการเครือข่ายอุปทาน รวมถึงผลที่เครือข่ายอุปทานช่วยยกระดับผลการดำเนินการของสถาบันคืออะไร"
+                            "code": "7.1c",
+                            "title": "Supply Network Management Results",
+                            "guide": "What are the results for key measures/indicators of supply network management, including the results of the supply network helping to elevate the institution's performance?"
                         }
                     ]
                 },
                 {
                     "code": "7.2",
-                    "title": "ผลลัพธ์ด้านลูกค้า",
+                    "title": "Customer Results",
                     "points": 80,
                     "kpi": [
                         "7-2-039",
@@ -1003,20 +1003,20 @@
                     ],
                     "areas": [
                         {
-                            "code": "7.2ก(1)",
-                            "title": "ความพึงพอใจของผู้เรียนและลูกค้ากลุ่มอื่น",
-                            "guide": "ผลลัพธ์ด้านความพึงพอใจและความไม่พึงพอใจของผู้เรียนและลูกค้ากลุ่มอื่นคืออะไร จำแนกตามการจัดการศึกษา\/วิจัย\/บริการฯ กลุ่มผู้เรียนและลูกค้า และส่วนตลาด"
+                            "code": "7.2a(1)",
+                            "title": "Satisfaction of Students and Other Customers",
+                            "guide": "What are the results for satisfaction and dissatisfaction of students and other customers, segmented by educational program\/research\/service, student and customer group, and market segment?"
                         },
                         {
-                            "code": "7.2ก(2)",
-                            "title": "ความผูกพันของผู้เรียนและลูกค้ากลุ่มอื่น",
-                            "guide": "ผลลัพธ์ด้านความผูกพัน รวมถึงการสร้างความสัมพันธ์และเสริมสร้างประสบการณ์ที่ดีให้แก่ผู้เรียนและลูกค้ากลุ่มอื่นคืออะไร"
+                            "code": "7.2a(2)",
+                            "title": "Engagement of Students and Other Customers",
+                            "guide": "What are the results for engagement, including building relationships and enhancing positive experiences for students and other customers?"
                         }
                     ]
                 },
                 {
                     "code": "7.3",
-                    "title": "ผลลัพธ์ด้านบุคลากร",
+                    "title": "Workforce Results",
                     "points": 80,
                     "kpi": [
                         "7-3-050",
@@ -1046,30 +1046,30 @@
                     ],
                     "areas": [
                         {
-                            "code": "7.3ก(1)",
-                            "title": "ขีดความสามารถและอัตรากำลังบุคลากร",
-                            "guide": "ผลลัพธ์ด้านขีดความสามารถและอัตรากำลังบุคลากร รวมถึงจำนวนบุคลากรในแต่ละลักษณะงาน\/ระดับ และทักษะที่เหมาะสมคืออะไร"
+                            "code": "7.3a(1)",
+                            "title": "Workforce Capability and Capacity",
+                            "guide": "What are the results for workforce capability and capacity, including the number of workforce members in each type of work\/level and the appropriate skills?"
                         },
                         {
-                            "code": "7.3ก(2)",
-                            "title": "บรรยากาศการทำงาน",
-                            "guide": "ผลลัพธ์ด้านสุขภาพ ความปลอดภัย ความสะดวกในการเข้าถึงที่ทำงาน ค่าตอบแทนและสิทธิประโยชน์สำหรับบุคลากรคืออะไร"
+                            "code": "7.3a(2)",
+                            "title": "Workforce Climate",
+                            "guide": "What are the results for health, safety, accessibility of the workplace, and compensation and benefits for the workforce?"
                         },
                         {
-                            "code": "7.3ก(3)",
-                            "title": "ความผูกพันของบุคลากร",
-                            "guide": "ผลลัพธ์ด้านความพึงพอใจ ความไม่พึงพอใจ การคงอยู่ และความผูกพันของบุคลากรคืออะไร"
+                            "code": "7.3a(3)",
+                            "title": "Workforce Engagement",
+                            "guide": "What are the results for workforce satisfaction, dissatisfaction, retention, and engagement?"
                         },
                         {
-                            "code": "7.3ก(4)",
-                            "title": "การพัฒนาบุคลากร",
-                            "guide": "ผลลัพธ์ด้านการพัฒนาบุคลากรและผู้นำคืออะไร"
+                            "code": "7.3a(4)",
+                            "title": "Workforce Development",
+                            "guide": "What are the results for workforce and leader development?"
                         }
                     ]
                 },
                 {
                     "code": "7.4",
-                    "title": "ผลลัพธ์ด้านการนำองค์กร และการกำกับดูแลองค์กร",
+                    "title": "Leadership and Governance Results",
                     "points": 80,
                     "kpi": [
                         "7-4-076",
@@ -1088,35 +1088,35 @@
                     ],
                     "areas": [
                         {
-                            "code": "7.4ก(1)",
-                            "title": "การนำองค์กร",
-                            "guide": "ผลลัพธ์ด้านการสื่อสารของผู้นำระดับสูงและการสร้างความผูกพันกับบุคลากร คู่ความร่วมมือที่เป็นทางการ ผู้เรียน และลูกค้ากลุ่มอื่น เพื่อถ่ายทอดพันธกิจ วิสัยทัศน์ และค่านิยมสู่การปฏิบัติคืออะไร"
+                            "code": "7.4a(1)",
+                            "title": "Leadership",
+                            "guide": "What are the results for senior leaders' communication and engagement with the workforce, formal partners, students, and other customers to deploy the mission, vision, and values into practice?"
                         },
                         {
-                            "code": "7.4ก(2)",
-                            "title": "การกำกับดูแลองค์กร",
-                            "guide": "ผลลัพธ์ด้านความรับผิดชอบในการกำกับดูแลองค์กร และความรับผิดชอบด้านการเงินทั้งภายในและภายนอกคืออะไร"
+                            "code": "7.4a(2)",
+                            "title": "Governance",
+                            "guide": "What are the results for governance accountability and for internal and external fiscal accountability?"
                         },
                         {
-                            "code": "7.4ก(3)",
-                            "title": "กฎหมาย กฎระเบียบข้อบังคับ และการรับรองคุณภาพ",
-                            "guide": "ผลลัพธ์ด้านการปฏิบัติตามหรือปฏิบัติได้เหนือกว่าข้อกำหนดด้านกฎหมาย กฎระเบียบข้อบังคับ และการรับรองคุณภาพคืออะไร"
+                            "code": "7.4a(3)",
+                            "title": "Laws, Regulations, and Accreditation",
+                            "guide": "What are the results for compliance with or exceeding legal, regulatory, and accreditation requirements?"
                         },
                         {
-                            "code": "7.4ก(4)",
-                            "title": "จริยธรรม",
-                            "guide": "ผลลัพธ์ด้านการประพฤติปฏิบัติอย่างมีจริยธรรม พฤติกรรมที่ละเมิดจริยธรรม และความเชื่อมั่นของผู้มีส่วนได้ส่วนเสียต่อผู้นำระดับสูงและการกำกับดูแลองค์กรคืออะไร"
+                            "code": "7.4a(4)",
+                            "title": "Ethics",
+                            "guide": "What are the results for ethical behavior, breaches of ethical behavior, and stakeholder trust in senior leaders and governance?"
                         },
                         {
-                            "code": "7.4ก(5)",
-                            "title": "สังคม",
-                            "guide": "ผลลัพธ์ด้านความผาสุกของสังคมและการสนับสนุนชุมชนที่สำคัญคืออะไร"
+                            "code": "7.4a(5)",
+                            "title": "Society",
+                            "guide": "What are the results for societal well-being and support of key communities?"
                         }
                     ]
                 },
                 {
                     "code": "7.5",
-                    "title": "ผลลัพธ์ด้านงบประมาณ การเงิน ตลาด และกลยุทธ์",
+                    "title": "Budgetary, Financial, Market, and Strategy Results",
                     "points": 90,
                     "kpi": [
                         "7-5-079",
@@ -1141,19 +1141,19 @@
                     ],
                     "areas": [
                         {
-                            "code": "7.5ก(1)",
-                            "title": "ผลการดำเนินการด้านงบประมาณและการเงิน",
-                            "guide": "ผลลัพธ์ด้านงบประมาณและการเงิน รวมถึงตัววัดผลรวมด้านการควบคุมต้นทุน ความมั่นคงทางการเงิน หรือผลการดำเนินการด้านงบประมาณคืออะไร"
+                            "code": "7.5a(1)",
+                            "title": "Budgetary and Financial Performance",
+                            "guide": "What are the results for budgetary and financial performance, including aggregate measures of cost control, financial viability, or budgetary performance?"
                         },
                         {
-                            "code": "7.5ก(2)",
-                            "title": "ผลการดำเนินการด้านตลาด",
-                            "guide": "ผลลัพธ์ด้านตลาด รวมถึงส่วนแบ่งตลาดหรือตำแหน่งในตลาด การเติบโตของตลาด และการเจาะตลาดใหม่คืออะไร"
+                            "code": "7.5a(2)",
+                            "title": "Market Performance",
+                            "guide": "What are the results for market performance, including market share or position, market growth, and entry into new markets?"
                         },
                         {
-                            "code": "7.5ข",
-                            "title": "การนำกลยุทธ์ไปปฏิบัติและด้านนวัตกรรม",
-                            "guide": "ผลลัพธ์ด้านการบรรลุกลยุทธ์และแผนปฏิบัติการของสถาบัน และความทุ่มเทเพื่อสร้างนวัตกรรมคืออะไร"
+                            "code": "7.5b",
+                            "title": "Strategy Implementation and Innovation",
+                            "guide": "What are the results for achievement of the institution's strategy and action plans, and for commitment to innovation?"
                         }
                     ]
                 }
@@ -1162,18 +1162,18 @@
     ],
     "scoring": {
         "method": "holistic",
-        "gate_rule": "ประเมินแบบองค์รวม (holistic) ไม่ใช่การเฉลี่ยรายปัจจัย: เลือก band ที่สะท้อนภาพรวมได้ดีที่สุด แล้วเลือกค่าย่อย (percent) ภายใน band นั้น. ปัจจัยที่อ่อนที่สุด (weakest dimension) ทำหน้าที่เป็น Gate กั้นไม่ให้ขยับขึ้น band สูง. เก็บทั้ง band และ percent; item_score = percent × item.points. (เกณฑ์ p.79)",
-        "percent_choices_note": "แต่ละ band คือ 'ชุด' ของค่า % ที่เลือกได้ (ฟิลด์ choices) ไม่ใช่ช่วงต่อเนื่อง — ระบบต้องบังคับให้เลือกได้เฉพาะค่าใน choices เท่านั้น.",
+        "gate_rule": "Assess holistically, not by averaging individual factors: choose the band that best reflects the overall picture, then choose a sub-value (percent) within that band. The weakest dimension acts as a Gate that prevents moving up to a higher band. Store both band and percent; item_score = percent × item.points. (Criteria p. 79)",
+        "percent_choices_note": "Each band is a 'set' of selectable % values (the choices field), not a continuous range — the system must enforce selection only from values in choices.",
         "ADLI": {
             "name": "Approach-Deployment-Learning-Integration",
-            "applies_to": "หมวด 1-6 (กระบวนการ / process)",
+            "applies_to": "Categories 1-6 (process)",
             "dimensions": [
-                "แนวทาง (Approach)",
-                "การถ่ายทอดเพื่อนำไปปฏิบัติ (Deployment)",
-                "การเรียนรู้ (Learning)",
-                "การบูรณาการ (Integration)"
+                "Approach (Approach)",
+                "Deployment (Deployment)",
+                "Learning (Learning)",
+                "Integration (Integration)"
             ],
-            "source": "ตารางช่วงคะแนนกระบวนการ PDF p.80",
+            "source": "Process scoring range table, PDF p. 80",
             "bands": [
                 {
                     "range": "0-5%",
@@ -1181,8 +1181,8 @@
                         0,
                         5
                     ],
-                    "label": "ตั้งรับปัญหา",
-                    "desc": "A: ไม่มีแนวทางเป็นระบบ ตอบแบบเล่าเรื่อง. D: ไม่มี/น้อยมาก. L: ไม่มีแนวคิดปรับปรุง ปรับเมื่อเกิดปัญหา. I: ไม่มีความสอดคล้อง แต่ละหน่วยทำเอกเทศ."
+                    "label": "Reactive",
+                    "desc": "A: No systematic approach; answers are narrative. D: None/very little. L: No improvement concept; adjusts when problems arise. I: No alignment; each unit works independently."
                 },
                 {
                     "range": "10-25%",
@@ -1192,8 +1192,8 @@
                         20,
                         25
                     ],
-                    "label": "เริ่มมีระบบ",
-                    "desc": "A: เริ่มมีแนวทางเป็นระบบตอบคำถามพื้นฐาน. D: เริ่มถ่ายทอด ยังมีอุปสรรค. L: เริ่มเปลี่ยนจากตั้งรับเป็นปรับปรุงพื้นฐาน. I: เริ่มสอดคล้องจากการร่วมแก้ปัญหา."
+                    "label": "Early systematic",
+                    "desc": "A: Beginning to have a systematic approach that answers basic questions. D: Beginning deployment; obstacles remain. L: Beginning to shift from reactive to basic improvement. I: Beginning to align through joint problem solving."
                 },
                 {
                     "range": "30-45%",
@@ -1203,8 +1203,8 @@
                         40,
                         45
                     ],
-                    "label": "มีระบบ เริ่มถ่ายทอด",
-                    "desc": "A: มีแนวทางเป็นระบบตอบคำถามพื้นฐาน. D: ถ่ายทอดแล้วแม้บางหน่วยยังเริ่มต้น. L: เริ่มมีแนวทางประเมิน/ปรับปรุงกระบวนการสำคัญ. I: เริ่มสอดคล้องกับความจำเป็นพื้นฐานตาม OP."
+                    "label": "Systematic, beginning deployment",
+                    "desc": "A: Has a systematic approach that answers basic questions. D: Deployed, although some units are just beginning. L: Beginning to have approaches to evaluate/improve key processes. I: Beginning to align with basic needs per the OP."
                 },
                 {
                     "range": "50-65%",
@@ -1214,8 +1214,8 @@
                         60,
                         65
                     ],
-                    "label": "มีระบบ ถ่ายทอด เรียนรู้",
-                    "desc": "A: มีแนวทางเป็นระบบ ตอบคำถามโดยรวม. D: ถ่ายทอดดีแม้บางหน่วยเริ่มต้น. L: ประเมิน/ปรับปรุงด้วยข้อมูลจริงเป็นระบบ + เริ่มมีนวัตกรรม. I: สอดคล้องกับความจำเป็นโดยรวมตาม OP."
+                    "label": "Systematic, deployed, learning",
+                    "desc": "A: Has a systematic approach that answers the questions overall. D: Well deployed, although some units are just beginning. L: Systematic evaluation/improvement using real data + beginning innovation. I: Aligned with overall needs per the OP."
                 },
                 {
                     "range": "70-85%",
@@ -1225,8 +1225,8 @@
                         80,
                         85
                     ],
-                    "label": "เป็นระบบ บูรณาการ",
-                    "desc": "A: เป็นระบบ ตอบคำถามย่อยส่วนใหญ่. D: ถ่ายทอดดีไม่มีความแตกต่างมีนัยสำคัญ. L: ประเมิน/ปรับปรุง+เรียนรู้เป็นระบบ แสดงนวัตกรรม. I: บูรณาการตาม OP ทั้งปัจจุบันและอนาคต."
+                    "label": "Systematic, integrated",
+                    "desc": "A: Systematic; answers most sub-questions. D: Well deployed with no significant differences. L: Systematic evaluation/improvement + learning; demonstrates innovation. I: Integrated per the OP, both now and in the future."
                 },
                 {
                     "range": "90-100%",
@@ -1235,21 +1235,21 @@
                         95,
                         100
                     ],
-                    "label": "เป็นแบบอย่างที่ดี",
-                    "desc": "A: เป็นระบบ ตอบคำถามย่อยครบถ้วน. D: ถ่ายทอดทั่วถึงไม่มีจุดอ่อน. L: ปรับปรุง+นวัตกรรมเป็นเครื่องมือระดับสถาบัน. I: บูรณาการเต็มที่ตาม OP."
+                    "label": "Role model",
+                    "desc": "A: Systematic; answers all sub-questions completely. D: Deployed thoroughly with no weaknesses. L: Improvement + innovation are institution-level tools. I: Fully integrated per the OP."
                 }
             ]
         },
         "LeTCI": {
             "name": "Levels-Trends-Comparisons-Integration",
-            "applies_to": "หมวด 7 (ผลลัพธ์ / results)",
+            "applies_to": "Category 7 (results)",
             "dimensions": [
-                "ระดับ (Levels)",
-                "แนวโน้ม (Trends)",
-                "การเปรียบเทียบ (Comparisons)",
-                "การบูรณาการ (Integration)"
+                "Levels (Levels)",
+                "Trends (Trends)",
+                "Comparisons (Comparisons)",
+                "Integration (Integration)"
             ],
-            "source": "ตารางช่วงคะแนนผลลัพธ์ PDF p.81",
+            "source": "Results scoring range table, PDF p. 81",
             "bands": [
                 {
                     "range": "0-5%",
@@ -1257,8 +1257,8 @@
                         0,
                         5
                     ],
-                    "label": "ไม่มีผลลัพธ์/มีน้อย",
-                    "desc": "Le: ไม่มี/ไม่ดีในเรื่องที่รายงาน. T: ไม่มีแนวโน้ม/แนวโน้มลบ. C: ไม่มีสารสนเทศเปรียบเทียบ. I: ไม่มีผลในเรื่องสำคัญต่อพันธกิจ."
+                    "label": "No or few results",
+                    "desc": "Le: None/poor in the areas reported. T: No trends/negative trends. C: No comparative information. I: No results in areas important to the mission."
                 },
                 {
                     "range": "10-25%",
@@ -1268,8 +1268,8 @@
                         20,
                         25
                     ],
-                    "label": "มีผลลัพธ์บางเรื่อง",
-                    "desc": "Le: รายงานบางเรื่อง เริ่มมีระดับที่ดี. T: เริ่มมีแนวโน้ม/บางเรื่องแนวโน้มลบ. C: แทบไม่มีเปรียบเทียบ. I: ผลเพียงบางเรื่องสำคัญ."
+                    "label": "Some results",
+                    "desc": "Le: Reported for some areas; beginning to show good levels. T: Beginning to show trends/negative trends in some areas. C: Almost no comparisons. I: Results in only some important areas."
                 },
                 {
                     "range": "30-45%",
@@ -1279,8 +1279,8 @@
                         40,
                         45
                     ],
-                    "label": "มีผลลัพธ์ มีแนวโน้ม",
-                    "desc": "Le: ระดับดีตอบคำถามพื้นฐาน. T: แนวโน้มดีในเรื่องสำคัญ. C: เริ่มมีสารสนเทศเปรียบเทียบ. I: ผลในหลายเรื่องสำคัญต่อพันธกิจ."
+                    "label": "Results with trends",
+                    "desc": "Le: Good levels that answer basic questions. T: Good trends in important areas. C: Beginning to have comparative information. I: Results in many areas important to the mission."
                 },
                 {
                     "range": "50-65%",
@@ -1290,8 +1290,8 @@
                         60,
                         65
                     ],
-                    "label": "แนวโน้มดี เริ่มเทียบเคียง",
-                    "desc": "Le: ระดับดีตอบคำถามโดยรวม. T: แนวโน้มดีต่อเนื่อง. C: เริ่มเทียบกับคู่เทียบ/ระดับเทียบเคียง. I: ครอบคลุมส่วนใหญ่ของผู้เรียน/ลูกค้า/กระบวนการสำคัญ."
+                    "label": "Good trends, beginning benchmarking",
+                    "desc": "Le: Good levels that answer the questions overall. T: Sustained good trends. C: Beginning to compare with comparable organizations/benchmark levels. I: Covers most important students/customers/processes."
                 },
                 {
                     "range": "70-85%",
@@ -1301,8 +1301,8 @@
                         80,
                         85
                     ],
-                    "label": "ผลดี เทียบเคียงได้ บูรณาการ",
-                    "desc": "Le: ระดับดีเลิศตอบคำถามย่อยส่วนใหญ่. T: ต่อเนื่องในเรื่องสำคัญ. C: เทียบเคียงดี เป็นผู้นำหลายด้าน. I: ครอบคลุมความต้องการส่วนใหญ่."
+                    "label": "Good results, benchmarkable, integrated",
+                    "desc": "Le: Very good levels that answer most sub-questions. T: Sustained in important areas. C: Good benchmarking; leader in many areas. I: Covers most needs."
                 },
                 {
                     "range": "90-100%",
@@ -1311,8 +1311,8 @@
                         95,
                         100
                     ],
-                    "label": "เป็นผู้นำ เทียบเคียงระดับสูง",
-                    "desc": "Le: ดีเลิศ ตอบคำถามย่อยครบถ้วน. T: ต่อเนื่อง เป็นผู้นำ. C: เป็นผู้นำในวงการเทียบเคียง. I: ครอบคลุม+คาดการณ์ผลในส่วนใหญ่ของผู้เรียน/ลูกค้า/บุคลากร/ตลาด/กระบวนการ/แผนปฏิบัติการ."
+                    "label": "Leader, high-level benchmarking",
+                    "desc": "Le: Excellent; answers all sub-questions completely. T: Sustained; leader. C: Leader within the benchmark sector. I: Covers + projects results for most students/customers/workforce/market/processes/action plans."
                 }
             ]
         }

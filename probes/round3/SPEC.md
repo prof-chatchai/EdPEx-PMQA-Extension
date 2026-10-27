@@ -65,7 +65,7 @@ ones (`probes/round3/profiles_round3.json`):
   Basic = 300, Advance = 400, Significance = 500. Answers are written to show Approach, Deployment
   and Result, but AD-R is not rated as separate factors.
   - Source: OPDC-based assessment manual, Department of Mental Health, fiscal year 2568, pp. 5, 8
-    and 9. The OCR text of those pages is in pmqa40_ocr_pages.txt; the manual is at https://psdg.dmh.go.th/pmqa40/ (PDF, fiscal year 2568).
+    and 9. The OCR text of those pages is in pmqa40_ocr_pages.txt (Thai original; English translation in pmqa40_ocr_pages_EN.txt); the manual is at https://psdg.dmh.go.th/pmqa40/ (PDF, fiscal year 2568).
 - **V8**, synthetic: EdPEx with six bands but factors rated on four levels. Under C2c it is predicted
   **not** to be carried.
 

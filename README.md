@@ -96,3 +96,11 @@ for the redesigned engine. Spec, profiles and predictions were pushed as commit 
 `app/scoring_v2.php` differs from `app/scoring.php` by 29 added and 6 removed lines
 (`git diff --no-index --numstat app/scoring.php app/scoring_v2.php`). With no framework definition supplied
 it behaves as v1.
+
+## Language note
+
+All code comments, messages, configuration labels and documentation in this repository are in English.
+The criteria titles in `config/edpex.json` and `config/pmqa.json` are English translations of the official Thai
+criteria (EdPEx 2024-2027, after the Baldrige Education framework; PMQA 2019). The only Thai-language file is
+`probes/round3/pmqa40_ocr_pages.txt`, the verbatim OCR of the cited Thai government manual kept as the
+primary-source record; its English translation is `probes/round3/pmqa40_ocr_pages_EN.txt`.

@@ -1,0 +1,91 @@
+English translation of pmqa40_ocr_pages.txt (the Thai-language OCR of pages 5, 8 and 9 of the cited PMQA 4.0 manual).
+The Thai OCR file is kept unchanged as the primary-source record; this file gives the English meaning so that
+editors, reviewers and readers can follow it. OCR noise lines (garbled characters, figure fragments) are omitted
+and marked [OCR noise]. Thai Buddhist-era years are given with their CE equivalent (B.E. 2568 = 2025).
+
+Source: Department of Mental Health (Thailand), Manual for assessing the status of government agencies as
+Bureaucracy 4.0 (PMQA 4.0), fiscal year 2568 (2025). https://psdg.dmh.go.th/pmqa40/files/
+
+===== page 5 =====
+Manual for assessing the status of government agencies as Bureaucracy 4.0,
+under the government performance-assessment framework, fiscal year B.E. 2568 (2025).
+
+[...] within the agency and the agency's efforts to drive its work toward sustainable goals.
+The OPDC (Office of the Public Sector Development Commission) assesses Bureaucracy 4.0 status as the overall
+average score across all 7 categories: Category 1 Organizational Leadership, Category 2 Strategic Planning,
+Category 3 Customer and Stakeholder Focus, Category 4 Measurement, Analysis and Knowledge Management,
+Category 5 Workforce Focus, Category 6 Operations Focus, and Category 7 Results.
+The assessment criteria are those of round 2 (12 months), 2025 (criteria raised to approximate the PMQA 4.0
+award criteria of 2024), and targets are set in line with the PMQA 4.0 development levels shown below.
+
+KPI details
+KPI: assessment of the agency's status as a Bureaucracy 4.0 organization (PMQA 4.0)
+National strategy: rebalancing and developing the public-sector management system
+Master plan: issue 20, public services and public-sector efficiency
+Sub-master plan: development of the public-sector management system
+Sub-master-plan target: the public sector has high capability, equivalent to international standards
+Target for 2022-2024 (using the PMQA 4.0 criteria of 2023): 90 percent -> 100 percent [table, partly OCR noise]
+
+Target for 2025: assessment criteria round 2 (12 months), 2025 (raised to approximate the PMQA 4.0 award criteria of 2024)
+Departments, provinces and public organizations:
+  Initial target (50) = 300 points; standard target (75) = 400 points; advanced target (100) = 470 points.
+
+The OPDC designed the tool for assessing an organization's status as Bureaucracy 4.0 (PMQA 4.0) to serve the
+agency's mission and to link it to national strategy and to results in national competitiveness, by
+understanding the challenges of both the agency and the country's development direction so as to set
+challenging strategic goals. There are 3 development levels:
+(1) Basic: assessment result equivalent to 300-399 points;
+(2) Advance: assessment result equivalent to 400-469 points;
+(3) Significance: assessment result equivalent to 470-500 points.
+[OCR noise]
+Basic level: systematic but reactive operation, i.e. performing duties according to function and regulations.
+Advance level: proactive operation, i.e. thinking and analysing before acting and anticipating events that may occur.
+Significance level (continuous development): effective and innovative operation, i.e. thinking in a connected,
+integrated way to produce effective and innovative results. The sub-dimensions are described below.
+
+
+===== page 8 =====
+Manual for assessing the status of government agencies as Bureaucracy 4.0,
+under the government performance-assessment framework, fiscal year B.E. 2568 (2025).
+
+The OPDC set the standard for the PMQA 4.0 (KPI) assessment in 2025 under the Bureaucracy 4.0 status-assessment
+criteria, revised edition B.E. 2567 (2024), together with the training material on assessing government
+agencies' Bureaucracy 4.0 status held on 15-16 January 2025. The score level of each item is judged from the
+results the agency writes in answer to that item. The main overall assessment guidelines are:
+[OCR noise]
+- Adhere to the principle of Learning and improvement relative to the previous year.
+- The written answer to each item should explain "A-D-R", i.e. the system/approach (Approach), its deployment
+  (Deploy) illustrated with concrete examples, and the results (Result); early results may be reported when the
+  item has no measured results yet.
+- The Organizational Profile (OP) submitted by the agency is related to each question in the process
+  categories (Categories 1 to 6) and the results category (Category 7), for example:
+
+Links between the Organizational Profile (OP) and the process categories (Categories 1 to 6) and the results
+category (Category 7)
+[figure labels:] PROCESS; technology-innovation-network development plan; related criteria/categories;
+culture/law; challenges, advantages; budget/revenue; customers, stakeholders; outputs, services; service
+technology; workforce, workforce changes; internal risks; suppliers, partners, collaborators; outputs,
+laws and regulations, core competencies; performance improvement. [partly OCR noise]
+
+The assessment considers the Organizational Profile information submitted by the agency when scoring the answers
+to related questions, as shown in the figure linking the OP with the process categories (Categories 1 to 6) and
+the results category (Category 7). Scoring of some questions therefore differs between agencies because they
+cannot all be viewed the same way; e.g. sub-item 1.1.1, on the social impact of the agency's core mission, is
+judged on whether the impact on society is linked to the nature of the agency's core-mission work.
+
+
+===== page 9 =====
+Manual for assessing the status of government agencies as Bureaucracy 4.0,
+under the government performance-assessment framework, fiscal year B.E. 2568 (2025).
+
+- The score level of each item is judged from whether the item's review points for organizational development
+  are fully met, placing it at one of the 3 PMQA 4.0 development levels; the total score is the sum of the
+  averages at each level, namely:
+  1) Basic = 300 points: systematic but reactive operation (printed "Proactive" in the source), i.e. performing
+     duties according to function and regulations.
+  2) Advance = 400 points (300 plus another 100 points): proactive operation, i.e. thinking and analysing before
+     acting and anticipating events that may occur.
+  3) Significance = 500 points (400 plus another 100 points): effective and innovative operation
+     (Effective & Innovation), i.e. thinking in a connected, integrated way to produce effective and innovative results.
+[OCR noise]
+and some items can become examples of excellent practice.

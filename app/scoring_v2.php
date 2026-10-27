@@ -6,7 +6,7 @@ declare(strict_types=1);
  * shared by the PHP web (views/assess.php) and, later, the API POST endpoint + clients.
  *
  * Rules (plan.md §4 / config/edpex.json scoring):
- *  - หมวด 1–6 = ADLI, หมวด 7 = LeTCI; each has 6 bands with a discrete % choice set.
+ *  - Categories 1–6 = ADLI, Category 7 = LeTCI; each has 6 bands with a discrete % choice set.
  *  - Assessor picks a band, then a % within that band (no free numbers).
  *  - Mandatory justification (strengths or OFI) once a score > 0 is given.
  *  - Management-by-fact gate (G-13): a score > 0 needs ≥ 1 evidence row for the item.
@@ -123,9 +123,9 @@ function scoringEvidenceCount(string $assessId, string $itemCode): int
 function scoringValidate(string $assessId, string $itemCode, int $categoryN, array $in): array
 {
     $errors = [];
-    // cycle lock (ขั้น ④): a final/approved cycle rejects every score write (web + API alike)
+    // cycle lock (step ④): a final/approved cycle rejects every score write (web + API alike)
     if (function_exists('appCycleLocked') && appCycleLocked($assessId)) {
-        $errors[] = 'รอบการประเมินถูกอนุมัติ/ล็อกแล้ว — แก้ไขคะแนนไม่ได้ (ต้องให้ผู้ดูแลระบบ reopen)';
+        $errors[] = 'This assessment cycle is approved/locked; scores cannot be edited (an administrator must reopen it)';
         return $errors;
     }
     $scheme = scoringScheme($categoryN);
@@ -134,20 +134,20 @@ function scoringValidate(string $assessId, string $itemCode, int $categoryN, arr
     $hasJust = trim(sv($in['strengths'] ?? '')) !== '' || trim(sv($in['ofi'] ?? '')) !== '';
 
     if (!in_array($band, scoringBands($scheme), true)) {
-        $errors[] = "กรุณาเลือกระดับ ({$scheme}) ที่ถูกต้อง";
+        $errors[] = "Please select a valid ({$scheme}) band";
     } else {
         $choices = scoringChoices($scheme, $band);
         if (!in_array($pct, $choices, true)) {
-            $errors[] = 'ร้อยละต้องเป็นค่าในระดับที่เลือก: ' . implode(' / ', array_map('strval', $choices)) . '%';
+            $errors[] = 'Percentage must be one of the values in the selected band: ' . implode(' / ', array_map('strval', $choices)) . '%';
         }
     }
     if ($pct > 0 && !$hasJust) {
-        $errors[] = 'ต้องระบุจุดแข็งหรือโอกาสพัฒนา (เหตุผลประกอบคะแนน)';
+        $errors[] = 'Strengths or opportunities for improvement (score rationale) are required';
     }
     if ($pct > 0 && scoringEvidenceCount($assessId, $itemCode) === 0) {
-        $errors[] = 'ต้องมีหลักฐานอย่างน้อย 1 รายการก่อนให้คะแนน (การจัดการโดยใช้ข้อมูลจริง G-13)';
+        $errors[] = 'At least 1 piece of evidence is required before scoring (management by fact, G-13)';
     }
-    // ADLI (หมวด 1–6) / LeTCI (หมวด 7): require the 4 dimensions and enforce the weakest-dimension
+    // ADLI (Categories 1–6) / LeTCI (Category 7): require the 4 dimensions and enforce the weakest-dimension
     // cap — same rule for both schemes (Spec 003 + 004); dims map to scores.dim1-4.
     if ($pct > 0) {
         $ords = [];
@@ -158,9 +158,9 @@ function scoringValidate(string $assessId, string $itemCode, int $categoryN, arr
         }
         [$k, $levels] = scoringFactorShape($scheme);
         if (count($ords) !== $k || min($ords) < 0 || max($ords) > $levels - 1) {
-            $errors[] = "ต้องประเมินครบทั้ง {$k} มิติ ({$scheme}) ระดับ 0–" . ($levels - 1);
+            $errors[] = "All {$k} dimensions ({$scheme}) must be rated at levels 0–" . ($levels - 1);
         } elseif (($itemOrd = scoringBandOrdinal($scheme, $band)) >= 0 && !scoringDimCapOk($itemOrd, $ords)) {
-            $errors[] = 'ระดับรวมต้องไม่เกินมิติที่อ่อนที่สุด (ระดับ ' . min($ords) . ') — มิติที่อ่อนสุดคุมคะแนน';
+            $errors[] = 'Overall band must not exceed the weakest dimension (level ' . min($ords) . '): the weakest dimension caps the score';
         }
     }
     return $errors;

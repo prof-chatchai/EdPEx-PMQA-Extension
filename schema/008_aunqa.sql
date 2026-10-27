@@ -1,6 +1,6 @@
 -- 008_aunqa.sql — AUN-QA program assessment (migrated slice from legacy prompti2_sciutk).
 -- Three tables: programs (ref), assessments (per program×year, overall_score), criterion scores.
--- Feeds KPI 7-4-074 "ร้อยละของหลักสูตรที่ผ่านการประเมินตามเกณฑ์ AUN-QA ได้คะแนน 3 ขึ้นไป".
+-- Feeds KPI 7-4-074 "Percentage of programmes assessed against the AUN-QA criteria with a score of 3 or higher".
 
 CREATE TABLE IF NOT EXISTS aunqa_programs (
     id         CHAR(36)     NOT NULL,

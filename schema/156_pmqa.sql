@@ -24,7 +24,7 @@ VALUES (
     '00000000-0000-4000-a000-000000000001',
     'PMQA',
     '2562',
-    'เกณฑ์คุณภาพการบริหารจัดการภาครัฐ พ.ศ. 2562 (PMQA-2562)',
+    'Public Sector Management Quality Award criteria, B.E. 2562 / 2019 (PMQA-2562)',
     'active',
     CURDATE(),
     'config/pmqa.json',
