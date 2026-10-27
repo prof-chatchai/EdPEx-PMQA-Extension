@@ -1,0 +1,137 @@
+{
+    "engine_v2_sha256_lf": "66b81a3cbed26147c5ab52cbec7e4e71bf908bd13a59e2263dc4f45633eb39ff",
+    "engine_v1_sha256_lf": "d8c0d646d9f4510fe7aa67b0f2a8291f792c4b82c82b947e58aaa708ff18648d",
+    "predictions_sha256_lf": "5e9889423ce649ef486737d545e50e7f67dd6576f1a5166b394b99b7dee31c8e",
+    "round": 4,
+    "profiles": [
+        {
+            "id": "CAF2020FT",
+            "kind": "real framework (round 4): CAF 2020 fine-tuned scoring",
+            "observations": {
+                "O1_scheme": true,
+                "O2_scale": true,
+                "O3_factors": true
+            },
+            "notes": [],
+            "predicted": "configuration only",
+            "observed": "configuration only",
+            "prediction_correct": true
+        },
+        {
+            "id": "W1",
+            "kind": "synthetic (round 4): violates C_ORA-A1 only (a results band below zero)",
+            "observations": {
+                "O1_scheme": true,
+                "O2_scale": true,
+                "O3_factors": true
+            },
+            "notes": [],
+            "predicted": "configuration only",
+            "observed": "configuration only",
+            "prediction_correct": true
+        },
+        {
+            "id": "W2",
+            "kind": "synthetic (round 4): violates C_ORA-A2 (continuous scale); necessarily also C2b",
+            "observations": {
+                "O1_scheme": true,
+                "O2_scale": false,
+                "O3_factors": false
+            },
+            "notes": [
+                "process scale differs (continuous)",
+                "process factors (4 factors, 6 levels, 1 bands): top score accepted, weak accepted"
+            ],
+            "predicted": "dedicated module",
+            "observed": "dedicated module",
+            "prediction_correct": true
+        },
+        {
+            "id": "W3",
+            "kind": "synthetic (round 4): violates C_ORA-A3 only (overall = weakest category percentage)",
+            "observations": {
+                "O1_scheme": true,
+                "O2_scale": true,
+                "O3_factors": true
+            },
+            "notes": [],
+            "predicted": "configuration only",
+            "observed": "configuration only",
+            "prediction_correct": true
+        },
+        {
+            "id": "W4",
+            "kind": "synthetic (round 4): violates C_ORA-A4 only (a category may be not applicable and leaves the denominator)",
+            "observations": {
+                "O1_scheme": true,
+                "O2_scale": true,
+                "O3_factors": true
+            },
+            "notes": [],
+            "predicted": "configuration only",
+            "observed": "configuration only",
+            "prediction_correct": true
+        },
+        {
+            "id": "W5",
+            "kind": "synthetic (round 4): violates C2a only (category 7 rated with both rubrics; category % = mean of the two)",
+            "observations": {
+                "O1_scheme": false,
+                "O2_scale": true,
+                "O3_factors": false
+            },
+            "notes": [
+                "category 7 (results+process): engine assigns one scheme (results)",
+                "process factors (4 factors, 6 levels, 6 bands): top score rejected, weak rejected"
+            ],
+            "predicted": "dedicated module",
+            "observed": "dedicated module",
+            "prediction_correct": true
+        },
+        {
+            "id": "W6",
+            "kind": "synthetic (round 4): violates C2c only (seven bands, six factor levels)",
+            "observations": {
+                "O1_scheme": true,
+                "O2_scale": true,
+                "O3_factors": false
+            },
+            "notes": [
+                "process factors (4 factors, 6 levels, 7 bands): top score rejected, weak rejected"
+            ],
+            "predicted": "dedicated module",
+            "observed": "dedicated module",
+            "prediction_correct": true
+        },
+        {
+            "id": "W7",
+            "kind": "synthetic (round 4): control, violates no clause (nine categories, 500 points)",
+            "observations": {
+                "O1_scheme": true,
+                "O2_scale": true,
+                "O3_factors": true
+            },
+            "notes": [],
+            "predicted": "configuration only",
+            "observed": "configuration only",
+            "prediction_correct": true
+        },
+        {
+            "id": "W8",
+            "kind": "synthetic (round 4): violates C2b only (process values in steps of 2.5)",
+            "observations": {
+                "O1_scheme": true,
+                "O2_scale": false,
+                "O3_factors": true
+            },
+            "notes": [
+                "process scale differs"
+            ],
+            "predicted": "dedicated module",
+            "observed": "dedicated module",
+            "prediction_correct": true
+        }
+    ],
+    "correct": 9,
+    "total": 9
+}

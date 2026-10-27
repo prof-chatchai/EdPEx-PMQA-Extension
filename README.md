@@ -104,3 +104,15 @@ The criteria titles in `config/edpex.json` and `config/pmqa.json` are English tr
 criteria (EdPEx 2024-2027, after the Baldrige Education framework; PMQA 2019). The only Thai-language file is
 `probes/round3/pmqa40_ocr_pages.txt`, the verbatim OCR of the cited Thai government manual kept as the
 primary-source record; its English translation is `probes/round3/pmqa40_ocr_pages_EN.txt`.
+
+## Round 4: a second, third-party engine (tag v1.6.0)
+
+`probes/round4/SPEC.md` was committed and pushed before any observation (commit 7358a7e). It pre-registers
+condition C_ORA for Open edX ORA2 (https://github.com/openedx/edx-ora2, commit 96b4ad10, AGPL-3.0-only, not
+vendored), applies C2 to the new profiles, and fixes the analysis in advance. Deviations are listed in
+`probes/round4/DEVIATIONS.md`.
+
+    python probes/round4/predict_round4.py                  # predictions_round4.json (committed first)
+    php probes/round4/observe_round4_v2.php                 # observations_round4_v2.json
+    <ORA2 .venv python> -I probes/round4/ora2_harness/observe_round4_ora2.py   # see ora2_harness/README.md
+    python probes/round4/analysis_round4.py                 # analysis_round4.json

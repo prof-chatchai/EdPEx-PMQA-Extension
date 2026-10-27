@@ -1,0 +1,165 @@
+{
+  "round4_ORA2_primary": {
+    "n": 20,
+    "correct": 19,
+    "accuracy": 0.95,
+    "clopper_pearson_95": [
+      0.7513,
+      0.9987
+    ],
+    "majority_outcome": "configuration only",
+    "mcnemar": {
+      "majority": {
+        "b_condition_only_correct": 4,
+        "c_baseline_only_correct": 0,
+        "p_exact_two_sided": 0.125,
+        "baseline_correct": 15
+      },
+      "all_conf": {
+        "b_condition_only_correct": 4,
+        "c_baseline_only_correct": 0,
+        "p_exact_two_sided": 0.125,
+        "baseline_correct": 15
+      },
+      "family": {
+        "b_condition_only_correct": 6,
+        "c_baseline_only_correct": 0,
+        "p_exact_two_sided": 0.03125,
+        "baseline_correct": 13
+      }
+    }
+  },
+  "round4_ORA2_sensitivity_D2": {
+    "n": 20,
+    "correct": 20,
+    "accuracy": 1.0,
+    "clopper_pearson_95": [
+      0.8316,
+      1.0
+    ],
+    "majority_outcome": "configuration only",
+    "mcnemar": {
+      "majority": {
+        "b_condition_only_correct": 4,
+        "c_baseline_only_correct": 0,
+        "p_exact_two_sided": 0.125,
+        "baseline_correct": 16
+      },
+      "all_conf": {
+        "b_condition_only_correct": 4,
+        "c_baseline_only_correct": 0,
+        "p_exact_two_sided": 0.125,
+        "baseline_correct": 16
+      },
+      "family": {
+        "b_condition_only_correct": 6,
+        "c_baseline_only_correct": 0,
+        "p_exact_two_sided": 0.03125,
+        "baseline_correct": 14
+      }
+    }
+  },
+  "round4_scoring_v2": {
+    "n": 9,
+    "correct": 9,
+    "accuracy": 1.0,
+    "clopper_pearson_95": [
+      0.6637,
+      1.0
+    ],
+    "majority_outcome": "configuration only",
+    "mcnemar": {
+      "majority": {
+        "b_condition_only_correct": 4,
+        "c_baseline_only_correct": 0,
+        "p_exact_two_sided": 0.125,
+        "baseline_correct": 5
+      },
+      "all_conf": {
+        "b_condition_only_correct": 4,
+        "c_baseline_only_correct": 0,
+        "p_exact_two_sided": 0.125,
+        "baseline_correct": 5
+      },
+      "family": {
+        "b_condition_only_correct": 5,
+        "c_baseline_only_correct": 0,
+        "p_exact_two_sided": 0.0625,
+        "baseline_correct": 4
+      }
+    }
+  },
+  "post_hoc_rounds_1_3_pooled": {
+    "n": 30,
+    "correct": 27,
+    "accuracy": 0.9,
+    "clopper_pearson_95": [
+      0.7347,
+      0.9789
+    ],
+    "mcnemar": {
+      "all_conf": {
+        "b_condition_only_correct": 9,
+        "c_baseline_only_correct": 1,
+        "p_exact_two_sided": 0.021484,
+        "baseline_correct": 19
+      },
+      "family": {
+        "b_condition_only_correct": 9,
+        "c_baseline_only_correct": 1,
+        "p_exact_two_sided": 0.021484,
+        "baseline_correct": 19
+      }
+    }
+  },
+  "pooled_rounds_1_4_authors_platform": {
+    "n": 39,
+    "correct": 36,
+    "accuracy": 0.9231,
+    "clopper_pearson_95": [
+      0.7913,
+      0.9838
+    ],
+    "mcnemar": {
+      "all_conf": {
+        "b_condition_only_correct": 13,
+        "c_baseline_only_correct": 1,
+        "p_exact_two_sided": 0.001831,
+        "baseline_correct": 24
+      },
+      "family": {
+        "b_condition_only_correct": 14,
+        "c_baseline_only_correct": 1,
+        "p_exact_two_sided": 0.000977,
+        "baseline_correct": 23
+      }
+    }
+  },
+  "pooled_rounds_1_4_both_engines": {
+    "n": 59,
+    "correct": 55,
+    "accuracy": 0.9322,
+    "clopper_pearson_95": [
+      0.8354,
+      0.9812
+    ],
+    "mcnemar": {
+      "all_conf": {
+        "b_condition_only_correct": 17,
+        "c_baseline_only_correct": 1,
+        "p_exact_two_sided": 0.000145,
+        "baseline_correct": 39
+      },
+      "family": {
+        "b_condition_only_correct": 20,
+        "c_baseline_only_correct": 1,
+        "p_exact_two_sided": 2.1e-05,
+        "baseline_correct": 36
+      }
+    }
+  },
+  "notes": [
+    "Pooled units are not independent (same profiles across rounds and engines); descriptive only.",
+    "post_hoc_rounds_1_3_pooled was not pre-registered before rounds 1-3; it is reported as post hoc."
+  ]
+}
